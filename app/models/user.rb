@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :omniauthable,
          omniauth_providers: [:google_oauth2,:facebook]
+         validates :first_name, :last_name, :mobile_number, :location, :date_of_birth, presence: true
+
          def self.from_omniauth(auth)
           name_split = auth.info.name.split(" ")
           user = User.where(email: auth.info.email).first
