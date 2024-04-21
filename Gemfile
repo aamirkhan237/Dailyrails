@@ -71,3 +71,5 @@ gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem 'omniauth-facebook'
 gem 'activerecord-session_store'
+gem 'bootstrap'
+gem 'sassc-rails'

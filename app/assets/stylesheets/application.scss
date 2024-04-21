@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
+
+ .button-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the buttons horizontally */
+  }
+ 
+/* Custom button styles */
+.custom-button {
+    /* Size */
+    height: 35px;
+    margin: 6px;
+}
+  
