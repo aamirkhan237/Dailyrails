@@ -16,5 +16,8 @@ class User < ApplicationRecord
         def omniauth_sign_in?
           provider.present? # Check if the user is signing in via OmniAuth
         end
+        def self.ransackable_attributes(auth_object = nil)
+            ["avatar_url", "created_at", "date_of_birth", "email", "first_name", "full_name", "id", "id_value", "last_name", "location", "mobile_number", "provider", "reset_password_sent_at", "reset_password_token", "uid", "updated_at"]
+        end
         
 end 
