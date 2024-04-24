@@ -27,7 +27,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     omniauth(:facebook)
   end
 
- 
+  
   private
   def auth
     @auth ||=request.env['omniauth.auth']

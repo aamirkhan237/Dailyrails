@@ -74,3 +74,5 @@ gem 'activerecord-session_store'
 gem 'bootstrap'
 gem 'sassc-rails'
 gem 'activeadmin'
+
+ 

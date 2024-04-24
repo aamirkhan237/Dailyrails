@@ -4,7 +4,7 @@ ActiveAdmin.register User do
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
   # permit_params :email, :password, :password_confirmation
-  permit_params :email, :full_name, :first_name, :last_name, :mobile_number, :location, :date_of_birth
+  permit_params :email, :first_name, :last_name,:password,:password_confirmation, :mobile_number, :location, :date_of_birth, :role
 
   index do
     selectable_column
@@ -18,12 +18,25 @@ ActiveAdmin.register User do
     column :provider
     actions
   end
-
+  form do |f|
+    f.inputs do
+      f.input :email
+      f.input :first_name
+      f.input :last_name
+      f.input :mobile_number
+      f.input :location
+      f.input :date_of_birth
+      f.input :password
+      f.input :password_confirmation
+      f.input :role, as: :select, collection: User.roles.keys
+    end
+    f.actions
+  end
   filter :email
   filter :provider
   filter :location
   filter :first_name
-  
+  filter  :role
   
   # Uncomment all parameters which should be permitted for assignment
   #

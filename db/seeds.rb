@@ -8,3 +8,12 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+# Create 10 sample products
+10.times do |i|
+    Product.create!(
+      name: "Product #{i + 1}",
+      description: "Description of Product #{i + 1}",
+      price: rand(10.0..100.0).round(2)
+    )
+  end
+  

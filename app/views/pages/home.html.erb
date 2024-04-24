@@ -7,13 +7,20 @@
       <h2>Welcome, <%= current_user.email %></h2>
       <%= link_to "Edit Account", edit_user_registration_path, class: "btn btn-primary" %>
       <%= link_to "Admin", admin_root_path, class: "btn btn-info mt" %>
-      
+      <%= link_to "Products", products_path, class: "btn btn-success mt" %>
       <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger mt-2", data: { turbo: "false" } %>
     </div>
+<% if current_user.role == 'vendor' %>
+      <p>You are logged in as a vendor.</p>
+    <% else %>
+      <p>You are logged in as a regular user.</p>
+    <% end %>
+     
   <% else %>
     <div>
       <%= link_to "Login", new_user_session_path, class: "btn btn-primary" %>
       <%= link_to "Create Account", new_user_registration_path, class: "btn btn-success" %>
+      <%= link_to "Products", products_path, class: "btn btn-success mt" %>
     </div>
   <% end %>
   <% unless current_user.nil? %>
@@ -28,6 +35,8 @@
         <% User.where.not(id: current_user.id).each do |user| %>
           <tr>
             <td><%= user.email %></td>
+            <td>
+        </td>
           </tr>
         <% end %>
       </tbody>
