@@ -11,6 +11,7 @@
       </tr>
     </thead>
     <tbody>
+      <p><%= current_user.role %></p>
       <% @products.each do |product| %>
         <tr>
           <td><%= product.name %></td>

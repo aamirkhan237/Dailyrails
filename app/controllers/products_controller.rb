@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
     before_action :authenticate_user!
-    before_action :authorize_vendor, only: [:new, :create, :edit, :update, :destroy]
-  
+   
+    load_and_authorize_resource
     def index
       @products = Product.all
     end
@@ -46,10 +46,6 @@ class ProductsController < ApplicationController
   
     def product_params
       params.require(:product).permit(:name, :description, :price)
-    end
-  
-    def authorize_vendor
-      redirect_to root_path, alert: 'You are not authorized to perform this action.' unless current_user.vendor?
     end
   end
   

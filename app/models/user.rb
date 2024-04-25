@@ -6,7 +6,7 @@ class User < ApplicationRecord
          omniauth_providers: [:google_oauth2,:facebook]
          enum role: [:user, :vendor]
          validates :first_name, :last_name, :mobile_number, :location, :date_of_birth, presence: true, unless: :omniauth_sign_in?
-        
+         followability
 
          def self.from_omniauth(auth)
           name_split = auth.info.name.split(" ")
@@ -20,5 +20,6 @@ class User < ApplicationRecord
         def self.ransackable_attributes(auth_object = nil)
           ["avatar_url", "created_at", "date_of_birth", "email", "encrypted_password", "first_name", "full_name", "id", "id_value", "last_name", "location", "mobile_number", "provider", "remember_created_at", "reset_password_sent_at", "reset_password_token", "role", "uid", "updated_at"]
         end
-        
+      
+      
 end 
