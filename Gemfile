@@ -76,3 +76,5 @@ gem 'sassc-rails'
 gem 'activeadmin'
 
  
+gem "followability", "~> 1.1"
+gem 'cancancan'
