@@ -20,6 +20,8 @@ class User < ApplicationRecord
         def self.ransackable_attributes(auth_object = nil)
           ["avatar_url", "created_at", "date_of_birth", "email", "encrypted_password", "first_name", "full_name", "id", "id_value", "last_name", "location", "mobile_number", "provider", "remember_created_at", "reset_password_sent_at", "reset_password_token", "role", "uid", "updated_at"]
         end
-      
+        def unfollow(user)
+          followerable_relationships.where(followable_id: user.id).destroy_all
+        end
       
 end 
