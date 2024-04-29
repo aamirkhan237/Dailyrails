@@ -5,7 +5,7 @@ ActiveAdmin.register Product do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :name, :description, :price
+  permit_params :name, :description, :price, :image
   #
   # or
   index do
@@ -14,6 +14,9 @@ ActiveAdmin.register Product do
     column :name
     column :description
     column :price
+    column :image do |product|
+      image_tag product.image.variant(resize: '100x100') if product.image.attached?
+    end
     actions do |product|
       if product.active?
         link_to 'Set Inactive', set_inactive_admin_product_path(product), method: :put
@@ -40,6 +43,8 @@ ActiveAdmin.register Product do
       f.input :description
       f.input :price
       f.input :status
+      f.input :image, as: :file
+
     end
     f.actions
   end
