@@ -14,9 +14,7 @@ ActiveAdmin.register Product do
     column :name
     column :description
     column :price
-    column :image do |product|
-      image_tag product.image.variant(resize: '100x100') if product.image.attached?
-    end
+    column :image 
     actions do |product|
       if product.active?
         link_to 'Set Inactive', set_inactive_admin_product_path(product), method: :put

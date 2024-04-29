@@ -5,9 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :omniauthable,
          omniauth_providers: [:google_oauth2,:facebook]
          enum role: [:user, :vendor]
-         validates :first_name, :last_name, :mobile_number, :location, :date_of_birth, presence: true, unless: :omniauth_sign_in?
+         validates :first_name, :last_name, :mobile_number, :location, :email, :date_of_birth, presence: true, unless: :omniauth_sign_in?
          followability
-
+         validates :email, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i,
+         message: 'must be a valid email address' }
          def self.from_omniauth(auth)
           name_split = auth.info.name.split(" ")
           user = User.where(email: auth.info.email).first

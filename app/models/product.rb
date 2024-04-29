@@ -1,4 +1,5 @@
 class Product < ApplicationRecord
+  validates :name, :description, :price, presence: true
   has_one_attached :image
   enum status: { active: 'active', inactive: 'inactive' }
     def self.ransackable_attributes(auth_object = nil)
