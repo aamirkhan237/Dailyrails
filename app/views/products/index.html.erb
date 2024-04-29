@@ -1,16 +1,12 @@
-<h1>Products</h1>
+<h1 style="text-align: center; margin-top: 20px;" >Products</h1>
 
 <div class="table-responsive">
   <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-        <th>Action</th>
+	@@ -11,19 +11,22 @@
       </tr>
     </thead>
     <tbody>
+      <p><%= current_user.role %></p>
       <% @products.each do |product| %>
         <tr>
           <td><%= product.name %></td>
