@@ -7,9 +7,9 @@ class Ability
     # Define abilities for the user here. For example:
     #
      if user.user?
-      can :read, :all
+      can :read, Product,  status: 'active'
      elsif user.vendor?
-      can :manage, :all
+      can :manage, Product
      end
      
     #   return unless user.admin?

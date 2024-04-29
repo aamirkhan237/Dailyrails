@@ -1,4 +1,4 @@
-<h1 style="text-align: center; margin-top: 20px;" >Products</h1>
+<h1>Products</h1>
 
 <div class="table-responsive">
   <table class="table table-striped">
@@ -11,19 +11,22 @@
       </tr>
     </thead>
     <tbody>
-      <p><%= current_user.role %></p>
       <% @products.each do |product| %>
         <tr>
           <td><%= product.name %></td>
           <td><%= product.description %></td>
           <td><%= product.price %></td>
-          <td>
-            <%= link_to 'Edit', edit_product_path(product), class: 'btn btn-primary btn-sm' %>
-          </td>
+          <% if current_user.vendor? %>
+            <td>
+              <%= link_to 'Edit', edit_product_path(product), class: 'btn btn-primary btn-sm' %>
+            </td>
+          <% end %>
         </tr>
       <% end %>
     </tbody>
   </table>
 </div>
 
-<%= link_to 'New Product', new_product_path, class: 'btn btn-success' %>
+<% if current_user.vendor? %>
+  <%= link_to 'New Product', new_product_path, class: 'btn btn-success' %>
+<% end %>

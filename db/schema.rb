@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_25_032840) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_29_105325) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -40,6 +40,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_25_032840) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "cms_pages", force: :cascade do |t|
+    t.string "title"
+    t.string "slug"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "courses", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -59,12 +67,25 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_25_032840) do
     t.index ["followerable_type", "followerable_id"], name: "index_followability_relationships_on_followerable"
   end
 
+  create_table "follows", force: :cascade do |t|
+    t.string "follower_type", null: false
+    t.bigint "follower_id", null: false
+    t.string "followable_type", null: false
+    t.bigint "followable_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "blocked", default: false
+    t.index ["followable_type", "followable_id"], name: "index_follows_on_followable"
+    t.index ["follower_type", "follower_id"], name: "index_follows_on_follower"
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.decimal "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "status"
   end
 
   create_table "sessions", force: :cascade do |t|

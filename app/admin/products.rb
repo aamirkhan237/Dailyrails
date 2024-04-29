@@ -14,15 +14,32 @@ ActiveAdmin.register Product do
     column :name
     column :description
     column :price
-    actions
+    actions do |product|
+      if product.active?
+        link_to 'Set Inactive', set_inactive_admin_product_path(product), method: :put
+      else
+        link_to 'Set Active', set_active_admin_product_path(product), method: :put
+      end
+    end
+  end
+
+  member_action :set_active, method: :put do
+    resource.active!
+    redirect_to admin_products_path, notice: "#{resource.name} is now active."
+  end
+
+  member_action :set_inactive, method: :put do
+    resource.inactive!
+    redirect_to admin_products_path, notice: "#{resource.name} is now inactive."
   end
 
   
   form do |f|
     f.inputs do
-      f.input :email
-      f.input :password
-      f.input :password_confirmation
+      f.input :name
+      f.input :description
+      f.input :price
+      f.input :status
     end
     f.actions
   end
@@ -33,6 +50,5 @@ ActiveAdmin.register Product do
   #   permitted
   # end
   filter :name
-  filter :description
-  
+  filter :description  
 end
