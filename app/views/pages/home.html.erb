@@ -8,9 +8,6 @@
       <ul class="navbar-nav ms-auto">
         <% if current_user %>
           <li class="nav-item">
-            <%= link_to "Products", products_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
             <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger", data: { turbo: "false" } %>
           </li>
         <% else %>
@@ -25,6 +22,11 @@
     </div>
   </div>
 </nav>
+
+<div class="container text-end mt-4">
+  <%= link_to "Products", products_path, class: "btn btn-primary" %>
+</div>
+
 
 <div class="container text-center mt-4">
   <h1>Pages#home</h1>
@@ -66,10 +68,10 @@
             <td><%= user.email %></td>
                 <td>
                   <% if current_user.following?(user) %>
-        <%= button_to "Unfollow", unfollow_user_path(user) %>
-      <% else %>
-        <%= button_to "Follow", follow_user_path(user) %>
-      <% end %>
+                    <%= button_to "Unfollow", unfollow_user_path(user) %>
+                  <% else %>
+                    <%= button_to "Follow", follow_user_path(user) %>
+                  <% end %>
                 </td>
           </tr>
         <% end %>

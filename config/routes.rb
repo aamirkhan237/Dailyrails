@@ -1,4 +1,5 @@
 Rails.application.routes.draw do 
+  get 'cms_pages/show'
   get 'profile/show'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -8,6 +9,9 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     omniauth_callbacks: 'users/omniauth_callbacks',
   }
+
+
+  mount Ckeditor::Engine => '/ckeditor'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :posts  
   resources :products
@@ -22,6 +26,8 @@ Rails.application.routes.draw do
       post 'unfollow', to: 'users#unfollow'
     end
   end
+get '/pages/:slug', to: 'cms_pages#show', as: 'cms_page'
+
   
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.

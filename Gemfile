@@ -74,7 +74,7 @@ gem 'activerecord-session_store'
 gem 'bootstrap'
 gem 'sassc-rails'
 gem 'activeadmin'
-
- 
 gem "followability", "~> 1.1"
 gem 'cancancan'
+
+gem 'ckeditor'
