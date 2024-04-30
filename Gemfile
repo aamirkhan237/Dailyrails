@@ -78,3 +78,4 @@ gem "followability", "~> 1.1"
 gem 'cancancan'
 
 gem 'ckeditor'
+gem 'friendly_id'

@@ -95,18 +95,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_29_143633) do
     t.index ["followerable_type", "followerable_id"], name: "index_followability_relationships_on_followerable"
   end
 
-  create_table "follows", force: :cascade do |t|
-    t.string "follower_type", null: false
-    t.bigint "follower_id", null: false
-    t.string "followable_type", null: false
-    t.bigint "followable_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean "blocked", default: false
-    t.index ["followable_type", "followable_id"], name: "index_follows_on_followable"
-    t.index ["follower_type", "follower_id"], name: "index_follows_on_follower"
-  end
-
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"

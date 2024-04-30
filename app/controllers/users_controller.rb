@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     before_action :set_user
     def show; end
     def follow
-        user = User.find(params[:id])
+        @user=User.find(params[:id])
         current_user.send_follow_request_to(@user)
         @user.accept_follow_request_of(current_user)
         redirect_to root_path, notice: "You are now following #{@user.email}"
