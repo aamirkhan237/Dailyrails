@@ -22,6 +22,19 @@
     </div>
   </div>
 </nav>
+<div class="text-center">
+  <% if flash[:alert] %>
+    <div class="alert alert-danger">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+  <% if flash[:notice] %>
+    <div class="alert alert-danger">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+</div>
 
 <div class="container text-end mt-4">
   <%= link_to "Products", products_path, class: "btn btn-primary" %>
@@ -29,19 +42,11 @@
 
 
 <div class="container text-center mt-4">
+
   <h1>Pages#home</h1>
   <p class="text-center">Find me in app/views/pages/home.html.erb</p>
 
-  <% if flash[:alert] %>
-    <div class="alert alert-danger">
-      <%= flash[:alert] %>
-    </div>
-  <% end %>
-  <% if flash[:notice] %>
-    <div class="alert alert-danger">
-      <%= flash[:notice] %>
-    </div>
-  <% end %>
+  
 
   <% if current_user %>
     <div>
