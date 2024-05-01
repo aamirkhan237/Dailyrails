@@ -79,3 +79,4 @@ gem 'cancancan'
 
 gem 'ckeditor'
 gem 'friendly_id'
+gem 'hotwire-rails'

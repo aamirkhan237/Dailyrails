@@ -155,6 +155,10 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
     hashie (5.0.0)
+    hotwire-rails (0.1.3)
+      rails (>= 6.0.0)
+      stimulus-rails
+      turbo-rails
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.1)
@@ -393,6 +397,7 @@ DEPENDENCIES
   devise
   followability (~> 1.1)
   friendly_id
+  hotwire-rails
   importmap-rails
   jbuilder
   omniauth

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do 
+  get 'cart/',  to: 'cart#show'
+  post 'cart/add'
+  post 'cart/remove'
+ 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :courses
@@ -9,14 +13,11 @@ Rails.application.routes.draw do
   }
 
 
-  mount Ckeditor::Engine => '/ckeditor'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :posts  
   resources :products
   
-  # get 'user/:id', to:'user', as:'user'
-  # post 'user/:id/follow', to: 'users#follow', as: 'follow'
-  # post 'user/:id/unfollow', to: 'users#unfollow', as: 'unfollow'
+ 
   
   resources :users, only: [] do
     member do

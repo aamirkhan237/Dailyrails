@@ -8,8 +8,10 @@ class Ability
     #
      if user.user?
       can :read, Product,  status: 'active'
+      can [:add, :remove], Orderable, cart: { user_id: user.id }
      elsif user.vendor?
       can :manage, Product
+      can :manage, Orderable
      end
      
     #   return unless user.admin?

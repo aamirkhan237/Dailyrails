@@ -16,33 +16,44 @@ class ProductsController < ApplicationController
   
     def create
       @product = Product.new(product_params)
-      if @product.save
-        redirect_to @product, notice: 'Product was successfully created.'
-      else
-        render :new
+      respond_to do |format|
+        if @product.save
+          format.html { redirect_to product_url(@product), notice: "Product was successfully created." }
+          format.json { render :show, status: :created, location: @product }
+        else
+          format.html { render :new, status: :unprocessable_entity }
+          format.json { render json: @product.errors, status: :unprocessable_entity }
+        end
       end
     end
-  
     def edit
       @product = Product.find(params[:id])
     end
   
     def update
-      @product = Product.find(params[:id])
-      if @product.update(product_params)
-        redirect_to @product, notice: 'Product was successfully updated.'
-      else
-        render :edit
+      respond_to do |format|
+        if @product.update(product_params)
+          format.html { redirect_to product_url(@product), notice: "Product was successfully updated." }
+          format.json { render :show, status: :ok, location: @product }
+        else
+          format.html { render :edit, status: :unprocessable_entity }
+          format.json { render json: @product.errors, status: :unprocessable_entity }
+        end
       end
     end
   
     def destroy
       @product = Product.find(params[:id])
       @product.destroy
-      redirect_to products_url, notice: 'Product was successfully destroyed.'
+      respond_to do |format|
+        format.html { redirect_to products_url, notice: "Product was successfully destroyed." }
+        format.json { head :no_content }
+      end
     end
-  
     private
+    def set_product
+      @product = Product.find(params[:id])
+    end
   
     def product_params
       params.require(:product).permit(:name, :description, :price, :image)

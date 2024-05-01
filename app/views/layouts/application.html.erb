@@ -13,6 +13,7 @@
   </head>
 
   <body>
+   <%= render partial: 'cart/cart' if @render_cart %> 
     <%= yield %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
