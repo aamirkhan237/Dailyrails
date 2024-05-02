@@ -7,9 +7,17 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <% if current_user %>
-          <li class="nav-item">
-            <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger", data: { turbo: "false" } %>
+         <div class="d-inline mr-2">
+          <li class="nav-item mr-2">
+            <%= link_to "Cart", cart_path, class: "btn btn-success mr-3" %>
           </li>
+        </div>
+
+        <div class="d-inline">
+            <li class="nav-item">
+              <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger ml-2", data: { turbo: "false" } %>
+            </li>
+          </div>
         <% else %>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>

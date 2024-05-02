@@ -4,6 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :omniauthable,
          omniauth_providers: [:google_oauth2,:facebook]
+         has_one :cart
+         
          enum role: [:user, :vendor]
          validates :first_name, :last_name, :mobile_number, :location, :email, :date_of_birth, presence: true, unless: :omniauth_sign_in?
          followability

@@ -1,8 +1,8 @@
 Rails.application.routes.draw do 
-  # get 'cart/',  to: 'cart#show'
-  # post 'cart/add'
-  # post 'cart/remove'
- 
+
+  resource :cart, only: [:show] do
+    resources :cart_items, only: [:create, :destroy, :update]
+  end
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :courses

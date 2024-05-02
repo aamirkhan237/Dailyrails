@@ -76,6 +76,7 @@ gem 'sassc-rails'
 gem 'activeadmin'
 gem "followability", "~> 1.1"
 gem 'cancancan'
+gem 'image_processing', '~> 1.2'
 
 gem 'ckeditor'
 gem 'friendly_id'
