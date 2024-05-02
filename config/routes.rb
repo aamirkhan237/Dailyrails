@@ -1,7 +1,7 @@
 Rails.application.routes.draw do 
-  get 'cart/',  to: 'cart#show'
-  post 'cart/add'
-  post 'cart/remove'
+  # get 'cart/',  to: 'cart#show'
+  # post 'cart/add'
+  # post 'cart/remove'
  
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
