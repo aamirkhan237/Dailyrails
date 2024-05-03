@@ -41,6 +41,11 @@ class ProductsController < ApplicationController
         end
       end
     end
+    def show_custom
+      @products = Product.where(status: 'active')
+      render 'custom_show'
+    end
+    
   
     def destroy
       @product = Product.find(params[:id])
