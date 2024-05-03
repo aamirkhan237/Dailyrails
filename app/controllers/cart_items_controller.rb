@@ -21,7 +21,4 @@ class CartItemsController < ApplicationController
     redirect_to cart_path, notice: 'Product removed from cart.'
   end
 
-  def cart_item_params
-    params.require(:cart_item).permit(:product_id)
-  end
 end
