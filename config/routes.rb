@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   resource :cart, only: [:show] do
     resources :cart_items, only: [:create, :update, :destroy]
   end
+  get '/display/', to: 'products#show_custom', as: 'display_product'
 
-  
+
   
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -15,7 +16,7 @@ Rails.application.routes.draw do
     omniauth_callbacks: 'users/omniauth_callbacks',
   }
 
-
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :posts  
   resources :products
