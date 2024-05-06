@@ -5,16 +5,24 @@
   <% @products.each do |product| %>
     <div class="col-md-4">
       <div class="card">
-        <div id="carouselExampleSlidesOnly<%= product.id %>" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls<%= product.id %>" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <% product.images.each_with_index do |image, index| %>
               <div class="carousel-item <%= "active" if index == 0 %>">
-                 <%= link_to product_path(product) do %>
-                <%= image_tag image, class: "d-block w-100" %>
-                   <% end %>
+                <%= link_to product_path(product) do %>
+                  <%= image_tag image, class: "d-block w-100" %>
+                <% end %>
               </div>
             <% end %>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls<%= product.id %>" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls<%= product.id %>" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
         <div class="card-body">
           <h5 class="card-title"><%= product.name %></h5>
@@ -32,5 +40,3 @@
 <% if can? :create, Product %>
   <%= link_to 'New Product', new_product_path, class: 'btn btn-success' %>
 <% end %>
-
-
