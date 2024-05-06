@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
   validates :name, :description, :price, presence: true
-  has_one_attached :image
+  has_many_attached :images 
+
   enum status: { active: 'active', inactive: 'inactive' }
   has_many :cart_items
   

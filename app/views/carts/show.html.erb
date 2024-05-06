@@ -1,4 +1,4 @@
-<%= render 'products/nav'%>
+<%= render 'products/nav' %>
 
 <h1 style="text-align:center;margin-top:15px">Cart</h1>
 
@@ -8,7 +8,23 @@
     <% @cart.cart_items.each do |cart_item| %>
       <div class="col-md-4 mb-3">
         <div class="card">
-         <%= image_tag cart_item.product.image, class: "card-img-top", style:"width: 300px; height: 200px; margin: 0 auto;" %>
+          <div id="carouselExampleSlidesOnly<%= cart_item.id %>" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <% cart_item.product.images.each_with_index do |image, index| %>
+                <div class="carousel-item <%= "active" if index == 0 %>">
+                  <%= image_tag image, class: "d-block w-100", style: "height: 350px;" %>
+                </div>
+              <% end %>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleSlidesOnly<%= cart_item.id %>" type="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleSlidesOnly<%= cart_item.id %>" type="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              
+            </a>
+          </div>
           <div class="card-body">
             <h5 class="card-title"><%= cart_item.product.name %></h5>
             <p class="card-text"><%= cart_item.product.description %></p>
@@ -20,7 +36,7 @@
                 </div>
               <% end %>
             </div>
-            <p class="card-text">Price: <%= number_to_currency(cart_item.product.price) %> for each </p>
+            <p class="card-text">Price: <%= number_to_currency(cart_item.product.price) %> for each</p>
             <p class="card-text">Price: <%= number_to_currency(cart_item.product.price * cart_item.quantity) %></p>
             <% total_price += cart_item.product.price * cart_item.quantity %>
             <%= button_to 'Remove', cart_cart_item_path(cart_item), method: :delete, data: { turbo: "false" }, class: "btn btn-danger" %>
@@ -39,3 +55,42 @@
     Your cart is empty.
   </div>
 <% end %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+      const carouselId = carousel.id;
+      const prevButton = document.querySelector(`#${carouselId} .carousel-control-prev`);
+      const nextButton = document.querySelector(`#${carouselId} .carousel-control-next`);
+      const images = carousel.querySelectorAll('.carousel-item');
+
+      let currentIndex = 0;
+
+      // Hide all images except the first one
+      images.forEach((image, index) => {
+        if (index !== 0) {
+          image.classList.remove('active');
+        }
+      });
+
+      // Function to show next image
+      const showNextImage = () => {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+      };
+
+      // Function to show previous image
+      const showPreviousImage = () => {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        images[currentIndex].classList.add('active');
+      };
+
+      // Event listeners for navigation buttons
+      nextButton.addEventListener('click', showNextImage);
+      prevButton.addEventListener('click', showPreviousImage);
+    });
+  });
+</script>

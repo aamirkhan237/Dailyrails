@@ -29,7 +29,8 @@
           <%= f.number_field :price, class: "form-control" %>
         </div>
         <div class="mb-3">
-          <%= f.file_field :image, class: "form-control" %>
+         <%= f.label "Images", class: "form-label" %>
+          <%= f.file_field :images, multiple: true, class: "form-control" %>
         </div>
 
         <div class="actions">

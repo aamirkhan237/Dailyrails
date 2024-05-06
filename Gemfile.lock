@@ -407,6 +407,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
+  jquery-rails (~> 4.4)
   omniauth
   omniauth-facebook
   omniauth-google-oauth2
