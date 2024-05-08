@@ -82,3 +82,11 @@ gem 'ckeditor'
 gem 'friendly_id'
 gem 'hotwire-rails'
 gem 'jquery-rails', '~> 4.4'
+
+gem 'rspec', '~> 3.13'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 6.1.0'
+  gem 'factory_bot_rails'
+end
+gem 'faker'
