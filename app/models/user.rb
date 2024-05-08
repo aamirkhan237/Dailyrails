@@ -9,8 +9,9 @@ class User < ApplicationRecord
          enum role: [:user, :vendor]
          validates :first_name, :last_name, :mobile_number, :location, :email, :date_of_birth, presence: true, unless: :omniauth_sign_in?
          followability
-         validates :email, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i,
+         validates :email, uniqueness: true, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i,
          message: 'must be a valid email address' }
+         validates :mobile_number, uniqueness: true
          def self.from_omniauth(auth)
           puts("********************************")
           name_split = auth.info.name.split(" ")
