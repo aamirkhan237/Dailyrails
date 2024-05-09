@@ -47,7 +47,7 @@ RSpec.describe User, type: :model do
     end
   end
   
-  describe '#omniauth_sign_in?' do
+  context '#omniauth_sign_in?' do
   it 'returns true if provider is present' do
     user = build(:user, provider: 'google_oauth2')
     expect(user.omniauth_sign_in?).to eq(true)
