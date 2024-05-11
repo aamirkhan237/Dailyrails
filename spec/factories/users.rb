@@ -8,5 +8,9 @@ FactoryBot.define do
     mobile_number { Faker::PhoneNumber.cell_phone }
     location { Faker::Address.city }
     date_of_birth { Faker::Date.birthday(min_age: 18, max_age: 65) }
+    role { :user }
+    trait :vendor do
+      role { :vendor }
+    end
   end
 end

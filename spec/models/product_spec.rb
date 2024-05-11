@@ -13,8 +13,8 @@ RSpec.describe Product, type: :model do
     it { should have_many(:cart_items) }
   end
 
-  # describe 'enums' do
-  #   it { should define_enum_for(:status).with_values(active: 'active', inactive: 'inactive') }
-  # end
+  describe 'enums' do
+    it { should define_enum_for(:status).with_values(active: 'active', inactive: 'inactive').backed_by_column_of_type(:string) }
+  end
 
 end
