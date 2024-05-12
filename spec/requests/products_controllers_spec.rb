@@ -6,7 +6,7 @@ RSpec.describe "ProductsControllers", type: :request do
      sign_in user
 
   end
-
+#index -------
   describe "GET /products" do
     let(:product) { create(:product)}
     it "returns http success" do
@@ -85,7 +85,7 @@ describe "POST /products" do
     expect(response).to have_http_status(:found) # Redirect (302)
     expect(Product.last.name).to eq(valid_product_attributes[:name])
     expect(response).to redirect_to(product_path(Product.last))
-    debugger
+    # debugger
   end
   
   it "creates a new product  without valid attributes" do
@@ -94,10 +94,10 @@ describe "POST /products" do
     post products_path, params: { product: product.attributes }
     expect(response).to have_http_status(:found) # Redirect (302)
     expect(Product.last.name).to eq(product.name)
-    # expect(response).to redirect_to(product_path(Product.last))
-    debugger
+    # debugger
   end
 end
+
 #patch
 
 describe "PATCH /products/:id" do
@@ -113,6 +113,19 @@ describe "PATCH /products/:id" do
     product.reload
     expect(product.name).to eq(updated_attributes[:name])
     expect(response).to redirect_to(product_path(product))
+    # debugger
+  end
+end
+#delete vendor --------
+describe "DELETE /products/:id" do
+  let(:vendor) { create(:user, :vendor) }
+  let!(:product) { create(:product) }
+
+  it "destroys a product when a vendor is signed in" do
+    sign_in vendor
+    expect { delete product_path(product) }.to change(Product, :count).by(-1)
+    expect(response).to have_http_status(:found) # Redirect (302)
+    expect(response).to redirect_to(products_path)
     debugger
   end
 end

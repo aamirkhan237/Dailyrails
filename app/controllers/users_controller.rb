@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     before_action :authenticate_user! , only: [:follow, :unfollow]
     before_action :set_user
-    def show; end
+
     def follow
         @user=User.find(params[:id])
         current_user.send_follow_request_to(@user)
