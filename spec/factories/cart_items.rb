@@ -4,4 +4,5 @@ FactoryBot.define do
     association :product  
    
   end
+
 end
