@@ -19,7 +19,7 @@ RSpec.describe "ProductsControllers", type: :request do
       # debugger
     end
   end
-
+#show
   describe "GET /products/:id" do
     let(:product) { create(:product)}
       it "returns http success" do
@@ -82,7 +82,7 @@ describe "POST /products" do
     vendor = create(:user, :vendor)
     sign_in vendor 
     post products_path, params: { product: valid_product_attributes }
-    expect(response).to have_http_status(:found) # Redirect (302)
+    expect(response).to have_http_status(:found) 
     expect(Product.last.name).to eq(valid_product_attributes[:name])
     expect(response).to redirect_to(product_path(Product.last))
     # debugger
@@ -92,7 +92,7 @@ describe "POST /products" do
     # vendor = create(:user, :vendor)
     # sign_in vendor 
     post products_path, params: { product: product.attributes }
-    expect(response).to have_http_status(:found) # Redirect (302)
+    expect(response).to have_http_status(:found) 
     expect(Product.last.name).to eq(product.name)
     # debugger
   end

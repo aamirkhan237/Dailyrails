@@ -6,7 +6,14 @@ RSpec.describe CartItem, type: :model do
       it { should belong_to(:cart) }
       it { should belong_to(:product) }
     end
-  
+
+    context 'validations' do
+      it 'validates presence of cart_item' do
+        cart_item = create(:cart_item)
+        expect(cart_item).to be_valid
+        debugger
+      end
+    end
     context 'validations' do
       it 'validates presence of cart' do
         cart_item = build(:cart_item, cart: nil)

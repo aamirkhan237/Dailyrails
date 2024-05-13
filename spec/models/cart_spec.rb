@@ -22,7 +22,7 @@ require 'rails_helper'
     it 'can be created and associated with a user' do
 
       user=create(:user)
-      cart = create(:cart,user: user) #I have removed the method of activerecord CartItem.create
+      cart = create(:cart) #I have removed the method of activerecord CartItem.create
       expect(cart).to be_valid
       expect(cart.user).to eq(user)
       debugger
