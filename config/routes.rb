@@ -3,9 +3,12 @@ Rails.application.routes.draw do
   resource :cart, only: [:show] do
     resources :cart_items, only: [:create, :update, :destroy]
   end
-  
-  get '/display/', to: 'products#show_custom', as: 'display_product'
 
+  # get '/display/', to: 'products#show_custom', as: 'display_product'
+
+  resources :orders, only: [:create, :new]
+  resources :addresses, only: [:new, :create]
+  
 
   
   devise_for :admin_users, ActiveAdmin::Devise.config

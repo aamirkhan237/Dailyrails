@@ -11,8 +11,9 @@
           <p><strong>Description:</strong> <%= @product.description %></p>
           <p><strong>Price:</strong> <%= @product.price %></p>
         <% end %>
-        <div class="mb-4">
+        <div class="mb-2 d-flex justify-content">
           <%= button_to 'Add to Cart', cart_cart_items_path(product_id: @product.id), method: :post, class: 'btn btn-primary' %>
+          <%= link_to 'Buy Now', new_order_path(product_id: @product.id), class: 'btn btn-success btn-sm ms-4 ' %>
         </div>
         <% if can? :edit, @product %>
           <%= link_to 'Edit', edit_product_path(@product), class: 'btn btn-primary btn-sm' %>
