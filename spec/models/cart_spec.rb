@@ -10,22 +10,21 @@ require 'rails_helper'
     it 'validates presence of user' do
       cart = create(:cart)
       expect(cart).to be_valid
-      debugger
+      # debugger
     end
     it 'validates presence of user' do
         cart = build(:cart,user: nil)
         expect(cart).not_to be_valid
-        debugger
+        # debugger
       end
     end
   describe 'behavior' do
     it 'can be created and associated with a user' do
-
       user=create(:user)
-      cart = create(:cart) #I have removed the method of activerecord CartItem.create
+      cart = create(:cart,user:user) #I have removed the method of activerecord CartItem.create
       expect(cart).to be_valid
       expect(cart.user).to eq(user)
-      debugger
+      # debugger
     end
 end
 end

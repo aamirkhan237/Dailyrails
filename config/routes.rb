@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resource :cart, only: [:show] do
     resources :cart_items, only: [:create, :update, :destroy]
   end
+  
   get '/display/', to: 'products#show_custom', as: 'display_product'
 
 

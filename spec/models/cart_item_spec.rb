@@ -11,20 +11,20 @@ RSpec.describe CartItem, type: :model do
       it 'validates presence of cart_item' do
         cart_item = create(:cart_item)
         expect(cart_item).to be_valid
-        debugger
+        # debugger
       end
     end
     context 'validations' do
       it 'validates presence of cart' do
         cart_item = build(:cart_item, cart: nil)
         expect(cart_item).not_to be_valid
-        debugger
+        # debugger
       end
   
       it 'validates presence of product' do
         cart_item = build(:cart_item, product: nil)
         expect(cart_item).not_to be_valid
-        debugger
+        # debugger
       end
 
 
@@ -36,7 +36,7 @@ RSpec.describe CartItem, type: :model do
         expect(cart_item).to be_valid
         expect(cart_item.cart).to eq(cart)
         expect(cart_item.product).to eq(product)
-        debugger
+        # debugger
       end
   end
 end

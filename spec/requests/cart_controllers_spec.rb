@@ -12,7 +12,7 @@ RSpec.describe CartsController, type: :request do
         expect(response).to have_http_status(:success)
         expect(response).to render_template(:show)
         expect(assigns(:cart)).to eq(cart)
-        debugger
+        # debugger
       end
     end
     context "when the user doesn't have a cart" do
@@ -24,7 +24,7 @@ RSpec.describe CartsController, type: :request do
         expect(assigns(:cart)).to be_a(Cart)
         expect(assigns(:cart)).to be_persisted
         expect(assigns(:cart).user).to eq(user)
-        debugger
+        # debugger
       end
     end
   end
