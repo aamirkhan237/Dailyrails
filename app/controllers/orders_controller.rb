@@ -5,25 +5,33 @@ class OrdersController < ApplicationController
       @order = Order.new
       @product = Product.find(params[:product_id]) if params[:product_id].present?
 
-      puts "@product assigned:", @product.inspect
-      @order.order_items.build(product: @product, quantity: 1) if @product.present?
+      puts "@product assigned:", @product
+      
+      if @product.present?
+        @order.order_items.build(product: @product, quantity: 1)
+      else
+        @cart = current_user.cart
+        @cart.cart_items.each do |cart_item|
+          @order.order_items.build(product: cart_item.product, quantity: cart_item.quantity)
+        end
+      end
 
       @addresses = current_user.addresses
       @address = Address.new 
     end
   
-    def create
-      @order = Order.new(order_params)
-      @order.user = current_user
-      @order.address = current_user.addresses.find(params[:order][:address_id])
+    # def create
+    #   @order = Order.new(order_params)
+    #   @order.user = current_user
+    #   @order.address = current_user.addresses.find(params[:order][:address_id])
 
-      if @order.save
-        flash[:notice] = "Your order has been placed successfully!"
-        redirect_to orders_path
-      else
-        render 'new'
-      end
-    end
+    #   if @order.save
+    #     flash[:notice] = "Your order has been placed successfully!"
+    #     redirect_to orders_path
+    #   else
+    #     render 'new'
+    #   end
+    # end
 
     private
   
