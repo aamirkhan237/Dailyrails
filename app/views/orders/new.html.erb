@@ -1,32 +1,37 @@
 <h1>Order Confirmation</h1>
 <p>You are about to purchase the following:</p>
 <ul>
+    <% total_price = 0 %>
   <% @order.order_items.each do |order_item| %>
     <h3><%= order_item.product.name %> - <%= number_to_currency(order_item.product.price) %></h3>
     <p><%= order_item.product.description %></p>
-
+    <p>Quantity: <%= order_item.quantity %></p>
+    <p>Total Price for this item: <%= number_to_currency(order_item.product.price * order_item.quantity) %></p>
+    <% total_price += order_item.product.price * order_item.quantity %>
   <% end %>
 </ul>
+<h2 style="text-align:center">Total Price: <%= number_to_currency(total_price) %></h2>
 
 <% if @addresses.any? %>
   <h2>Select Shipping Address</h2>
-  <form>
-    <div class="form-group">
-      <label for="address_id">Choose Address</label>
-      <select id="address_id" name="order[address_id]" class="form-control">
-        <% @addresses.each do |address| %>
-          <option value="<%= address.id %>"><%= address.full_address %></option>
-        <% end %>
-      </select>
-    </div>
-  </form>
-  <% end %>
-  <h2>Add New Shipping Address</h2>
- <% if @product %>
-  <%= render 'shared/form', address: Address.new, product_id: @product.id %>
-<% else %>
-  <%= render 'shared/form', address: Address.new  %>
+  <div class="form-group">
+    <label for="address_id">Choose Address</label>
+    <select id="address_id" name="order[address_id]" class="form-control">
+      <% @addresses.each do |address| %>
+        <option value="<%= address.id %>"><%= address.full_address %></option>
+      <% end %>
+    </select>
+  </div>
 <% end %>
+
+<h2>Add New Shipping Address</h2>
+<%= render 'shared/form', address: Address.new, product_id: @product&.id %>
+
+<%= form_with(model: @order, local: true) do |f| %>
+  <%= f.hidden_field :from_cart, value: @product.nil? %>
+
+<% end %>
+
 <br>
 
 <%= button_to "Place Your Order", orders_path(order: @order.attributes), method: :post, class: "btn btn-primary" %>

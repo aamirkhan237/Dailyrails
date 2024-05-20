@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # get '/display/', to: 'products#show_custom', as: 'display_product'
 
-  resources :orders, only: [:create, :new]
+  resources :orders, only: [:create, :new, :show]
   resources :addresses, only: [:new, :create]
   
 

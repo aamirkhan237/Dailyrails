@@ -2,7 +2,7 @@ class Order < ApplicationRecord
   before_save :calculate_total_price
   validates :total_price, presence: true
   belongs_to :user
-  has_many :order_items
+  has_many :order_items, dependent: :destroy
   belongs_to :address
   enum state: { pending: 0, paid: 1, shipped: 2, cancelled: 3 }
 
