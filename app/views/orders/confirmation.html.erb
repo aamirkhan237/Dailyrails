@@ -1,0 +1,43 @@
+<div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-success text-white">
+        <h1 class="card-title">Order Placed</h1>
+      </div>
+      <div class="card-body">
+        <p>Thank you for your purchase!</p>
+        <p>Your order has been placed successfully.</p>
+
+        <h2 class="mt-4">Order Details</h2>
+        <ul class="list-group mb-4">
+          <% total_price = 0 %>
+          <% @order.order_items.each do |order_item| %>
+            <li class="list-group-item d-flex align-items-center">
+              <% if order_item.product.images.attached? %>
+                <%= image_tag order_item.product.images.first, class: 'img-thumbnail mr-3', style: 'max-width: 100px;' %>
+              <% else %>
+                <%= image_tag 'placeholder.jpg', class: 'img-thumbnail mr-3', style: 'max-width: 100px;' %>
+              <% end %>
+              <div class="flex-grow-1">
+                <h5 class="mb-1"><%= order_item.product.name %> - <%= number_to_currency(order_item.product.price) %></h5>
+                <p class="mb-1"><%= order_item.product.description %></p>
+                <p class="mb-1">Quantity: <%= order_item.quantity %></p>
+                <p class="mb-0">Total: <%= number_to_currency(order_item.product.price * order_item.quantity) %></p>
+              </div>
+            </li>
+            <% total_price += order_item.product.price * order_item.quantity %>
+          <% end %>
+        </ul>
+        <h2 style="text-align:center">Total Price: <%= number_to_currency(total_price) %></h2>
+
+        <div class="card mt-4">
+          <div class="card-header">
+            <h2>Shipping Information</h2>
+          </div>
+          <div class="card-body">
+            <h4>Shipping to: <%= @order.user.last_name %></h4>
+            <p><%= @order.address.full_address %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
