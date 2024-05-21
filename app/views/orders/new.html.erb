@@ -1,37 +1,59 @@
-<h1>Order Confirmation</h1>
-<p>You are about to purchase the following:</p>
-<ul>
-    <% total_price = 0 %>
-  <% @order.order_items.each do |order_item| %>
-    <h3><%= order_item.product.name %> - <%= number_to_currency(order_item.product.price) %></h3>
-    <p><%= order_item.product.description %></p>
-    <p>Quantity: <%= order_item.quantity %></p>
-    <p>Total Price for this item: <%= number_to_currency(order_item.product.price * order_item.quantity) %></p>
-    <% total_price += order_item.product.price * order_item.quantity %>
-  <% end %>
-</ul>
-<h2 style="text-align:center">Total Price: <%= number_to_currency(total_price) %></h2>
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header  bg-warning text-white">
+      <h1 class="card-title">Order Confirmation</h1>
+    </div>
+    <div class="card-body">
+      <p class="lead">You are about to purchase the following:</p>
+      <ul class="list-group mb-4">
+        <% total_price = 0 %>
+        <% @order.order_items.each do |order_item| %>
+          <li class="list-group-item d-flex align-items-center">
+            <% if order_item.product.images.attached? %>
+              <%= image_tag order_item.product.images.first, class: 'img-thumbnail mr-3', style: 'max-width: 100px;' %>
+            <% else %>
+              <%= image_tag 'placeholder.jpg', class: 'img-thumbnail mr-3', style: 'max-width: 100px;' %>
+            <% end %>
+            <div class="flex-grow-1">
+              <h5 class="mb-1"><%= order_item.product.name %> - <%= number_to_currency(order_item.product.price) %></h5>
+              <p class="mb-1"><%= order_item.product.description %></p>
+              <p class="mb-1">Quantity: <%= order_item.quantity %></p>
+              <p class="mb-0">Total: <%= number_to_currency(order_item.product.price * order_item.quantity) %></p>
+              <% total_price += order_item.product.price * order_item.quantity %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+      <h2 class="text-center">Total Price: <%= number_to_currency(total_price) %></h2>
 
-<% if @addresses.any? %>
-  <h2>Select Shipping Address</h2>
-  <div class="form-group">
-    <label for="address_id">Choose Address</label>
-    <select id="address_id" name="order[address_id]" class="form-control">
-      <% @addresses.each do |address| %>
-        <option value="<%= address.id %>"><%= address.full_address %></option>
+      <%= form_with model: @order, url: orders_path(product_id: params[:product_id]), local: true do |f| %>
+        <% if @addresses.any? %>
+          <div class="card mt-4">
+            <div class="card-header">
+              <h2>Select Shipping Address</h2>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="order_address_id">Choose Address</label>
+                <%= f.collection_select :address_id, @addresses, :id, :full_address, prompt: "Select Address", class: "form-control" %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+        <div class="form-group mt-4">
+          <%= f.submit "Place Your Order", class: "btn btn-primary btn-block" %>
+        </div>
       <% end %>
-    </select>
+
+      <div class="card mt-4">
+        <div class="card-header">
+          <h2>Add New Shipping Address</h2>
+        </div>
+        <div class="card-body">
+          <%= render 'shared/form', address: Address.new, product_id: @product&.id %>
+        </div>
+      </div>
+    </div>
   </div>
-<% end %>
-
-<h2>Add New Shipping Address</h2>
-<%= render 'shared/form', address: Address.new, product_id: @product&.id %>
-
-<%= form_with(model: @order, local: true) do |f| %>
-  <%= f.hidden_field :from_cart, value: @product.nil? %>
-
-<% end %>
-
-<br>
-
-<%= button_to "Place Your Order", orders_path(order: @order.attributes), method: :post, class: "btn btn-primary" %>
+</div>

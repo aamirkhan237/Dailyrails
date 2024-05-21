@@ -6,8 +6,8 @@ class User < ApplicationRecord
          omniauth_providers: [:google_oauth2,:facebook]
          has_one :cart
          has_many :addresses
-         has_many :orders
          enum role: [:user, :vendor]
+         has_many :orders
          validates :first_name, :last_name, :mobile_number, :location, :email, :date_of_birth, presence: true, unless: :omniauth_sign_in?
          followability
          validates :email, uniqueness: true, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i,

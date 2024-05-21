@@ -5,7 +5,8 @@
         <h5 class="mb-0">Billing details</h5>
       </div>
       <div class="card-body">
-        <%= form_for address, url: addresses_path(product_id: @product&.id), method: :post do |f| %>
+        <%= form_for address, url: addresses_path(product_id: @product&.id), method: :post do |f| %> 
+          <!-- Form fields for the new address -->
           <div class="row mb-4">
             <div class="col">
               <div class="form-outline">
@@ -45,3 +46,4 @@
       </div>
     </div>
   </div>
+</div>
