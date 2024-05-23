@@ -78,10 +78,14 @@ gem "followability", "~> 1.1"
 gem 'cancancan'
 gem 'image_processing', '~> 1.2'
 
+gem 'city-state'
+gem 'requestjs-rails'
+
 gem 'ckeditor'
 gem 'friendly_id'
 gem 'hotwire-rails'
 gem 'jquery-rails', '~> 4.4'
+gem 'country_state_select', '~> 3.2'
 
 gem 'rspec', '~> 3.13'
 

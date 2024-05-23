@@ -1,0 +1,1563 @@
+---
+:1:
+- Andau
+- Apetlon
+- Bad Tatzmannsdorf
+- Bernstein
+- Breitenbrunn
+- Bruckneudorf
+- Deutsch Jahrndorf
+- Deutsch Kaltenbrunn
+- Deutschkreutz
+- Donnerskirchen
+- Drassmarkt
+- Edelstal
+- Eisenstadt
+- Eltendorf
+- Frankenau
+- Frauenkirchen
+- Frisch
+- Gattendorf
+- Gols
+- Grosshoeflein
+- Grosspetersdorf
+- Guessing
+- Halbturn
+- Heiligenkreuz im Lafnitztal
+- Hochstrass
+- Horitschon
+- Hornstein
+- Illmitz
+- Inzenhof
+- Jennersdorf
+- Jois
+- Kaisersdorf
+- Kaisersteinbruch
+- Kittsee
+- Klingenbach
+- Kobersdorf
+- Koenigsdorf
+- Litzelsdorf
+- Lockenhaus
+- Loipersbach im Burgenland
+- Loipersdorf im Burgenland
+- Luising
+- Mannersdorf an der Rabnitz
+- Mariasdorf
+- Marz
+- Mattersburg
+- Mischendorf
+- Moenchhof
+- Mogersdorf
+- Muellendorf
+- Neufeld an der Leitha
+- Neuhaus am Klausenbach
+- Neumarkt an der Raab
+- Neusiedl am See
+- Neutal
+- Nickelsdorf
+- Oberpullendorf
+- Oberschuetzen
+- Oberwart
+- Oggau
+- Olbendorf
+- Oslip
+- Pama
+- Pamhagen
+- Parndorf
+- Podersdorf am See
+- Poettelsdorf
+- Punitz
+- Purbach am Neusiedler See
+- Rechnitz
+- Rettenbach
+- Riedlingsdorf
+- Rohrbach bei Mattersburg
+- Rudersdorf
+- Sankt Andrae am Zicksee
+- Sankt Margarethen im Burgenland
+- Sankt Martin an der Raab
+- Sankt Michael im Burgenland
+- Schandorf
+- Schattendorf
+- Schuetzen am Gebirge
+- Siegendorf im Burgenland
+- Sieggraben
+- Stegersbach
+- Steinberg an der Rabnitz
+- Steinbrunn
+- Stinatz
+- Stoob
+- Sulz im Burgenland
+- Tobaj
+- Trausdorf an der Wulka
+- Tschurndorf
+- Unterfrauenhaid
+- Unterpullendorf
+- Unterwart
+- Weiden am See
+- Weingraben
+- Wiesen
+- Willersdorf
+- Winden am See
+- Wolfau
+- Zagersdorf
+- Zurndorf
+:2:
+- Althofen
+- Annenheim
+- Arnoldstein
+- Auen
+- Bach Zweinitz
+- Bad Eisenkappel
+- Bauer
+- Berg im Drautal
+- Bleiberg ob Villach
+- Bleiburg
+- Bodensdorf
+- Dellach im Drautal
+- Doebriach
+- Ebenthal
+- Eberstein
+- Eitweg
+- Falkertsee
+- Feistritz an der Drau
+- Feistritz an der Gail
+- Feistritz im Rosental
+- Feistritz ob Bleiburg
+- Feld am See
+- Feldkirchen in Kaernten
+- Ferlach
+- Ferndorf
+- Fresach
+- Friesach
+- Gmuend
+- Goeriach
+- Goesselsdorf
+- Gorintschach
+- Grafenstein
+- Greifenburg
+- Griffen
+- Grosskirchheim
+- Gummern
+- Gurk
+- Hermagor
+- Himmelberg
+- Keutschach am See
+- Kirchbach
+- Klagenfurt
+- Kleinkirchheim
+- Knappenberg
+- Koestenberg
+- Koetschach
+- Koettmannsdorf
+- Kraig
+- Krumpendorf
+- Kuehnsdorf
+- Lambichl
+- Landskron
+- Lavamuend
+- Lendorf
+- Liebenfels
+- Lind
+- Linz
+- Magdalensberg
+- Maria Rain
+- Maria Saal
+- Maria Woerth
+- Millstatt
+- Mittertrixen
+- Moosburg
+- Muehldorf
+- Oberdrauburg
+- Obervellach
+- Oetting
+- Ossiach
+- Passau
+- Paternion
+- Pischeldorf
+- Poertschach am Woerthersee
+- Poggersdorf
+- Radenthein
+- Rennweg am Katschberg
+- Rosegg
+- Sachsenburg
+- Sankt Andrae
+- Sankt Egyden
+- Sankt Georgen im Gailtal
+- Sankt Gertraud
+- Sankt Kanzian
+- Sankt Martin am Techelsberg
+- Sankt Michael ob Bleiburg
+- Sankt Niklas an der Drau
+- Sankt Paul im Lavanttal
+- Sankt Peter am Bichl
+- Sankt Primus
+- Sankt Stefan am Krappfeld
+- Sankt Veit an der Glan
+- Sankt Veit im Jauntal
+- Sattendorf
+- Schiefling am See
+- Seebach
+- Seeboden
+- Sittersdorf
+- Spittal an der Drau
+- St. Paul im Lavanttal
+- Stall
+- Steindorf am Ossiacher See
+- Strassburg-Stadt
+- Tainach
+- Treibach
+- Velden am Wörther See
+- Verditz
+- Viktring
+- Villach
+- Voelkermarkt
+- Weissbriach
+- Weissenstein
+- Wernberg
+- Wolfsberg
+:3:
+- Absdorf
+- Achau
+- Alland
+- Allentsteig
+- Allhartsberg
+- Altenberg
+- Altlengbach
+- Altlichtenwarth
+- Altnagelberg
+- Amaliendorf
+- Ameis
+- Amstetten
+- Angern an der March
+- Anzenhof
+- Arbesthal
+- Artstetten
+- Aschbach Markt
+- Asperhofen
+- Auersthal
+- Bad Deutsch-Altenburg
+- Bad Fischau
+- Bad Pirawarth
+- Bad Schoenau
+- Bad Traunstein
+- Bad Voeslau
+- Baden bei Wien
+- Behamberg
+- Bergland
+- Berndorf
+- Bernhardsthal
+- Biberbach
+- Biedermannsdorf
+- Bisamberg
+- Blindenmarkt
+- Blumau an der Wild
+- Bockfliess
+- Boeheimkirchen
+- Boehlerwerk
+- Brand
+- Breitenfurt bei Wien
+- Breitenwaida
+- Breitstetten
+- Bruck an der Leitha
+- Brunn am Gebirge
+- Brunn im Felde
+- Dallein
+- Deutsch-Wagram
+- Dietersdorf
+- Dietmanns
+- Dobermannsdorf
+- Dobersberg
+- Dross
+- Ebendorf
+- Ebenfurth
+- Ebergassing
+- Ebreichsdorf
+- Echsenbach
+- Eggenburg
+- Eggendorf im Thale
+- Eibesbrunn
+- Eibesthal
+- Eichgraben
+- Emmersdorf an der Donau
+- Engelhartstetten
+- Ennsdorf
+- Enzenreith
+- Enzersfeld
+- Enzesfeld
+- Erlauf
+- Ernst
+- Ernstbrunn
+- Ernsthofen
+- Etsdorf am Kamp
+- Falkenstein
+- Felixdorf
+- Fels am Wagram
+- Ferschnitz
+- Feuersbrunn
+- Fischamend Dorf
+- Flandorf
+- Fraettingsdorf
+- Friedersbach
+- Furth bei Goettweig
+- Gaaden
+- Gablitz
+- Gaenserndorf
+- Gaming
+- Gars am Kamp
+- Gastern
+- Gedersdorf
+- Geras
+- Gerasdorf bei Wien
+- Gerersdorf
+- Giesshuebl
+- Gleissenfeld
+- Gloggnitz
+- Gmuend
+- Goellersdorf
+- Goepfritz an der Wild
+- Goestling an der Ybbs
+- Goettlesbrunn
+- Goetzendorf an der Leitha
+- Goldgeben
+- Graben
+- Grafenwoerth
+- Gramatneusiedl
+- Greinsfurth
+- Gresten
+- Grimmenstein
+- Gross-Engersdorf
+- Gross-Enzersdorf
+- Gross-Gerungs
+- Gross-Schweinbarth
+- Gross-Siegharts
+- Grossebersdorf
+- Grossharras
+- Grosskrut
+- Grossmugl
+- Grosspertholz
+- Grossriedenthal
+- Grossschoenau
+- Grossweikersdorf
+- Gruenbach am Schneeberg
+- Guenselsdorf
+- Gumpoldskirchen
+- Guntramsdorf
+- Gutenbrunn
+- Gutenstein
+- Haag
+- Hadersdorf am Kamp
+- Hagenbrunn
+- Haidershofen
+- Hainburg an der Donau
+- Hainfeld
+- Hanfthal
+- Hardegg
+- Haugsdorf
+- Hauskirchen
+- Hausleiten
+- Hausmening
+- Hautzendorf
+- Heidenreichstein
+- Heiligeneich
+- Heiligenkreuz
+- Hennersdorf
+- Herzogenburg
+- Himberg
+- Hintersdorf
+- Hipples
+- Hirtenberg
+- Hochwolkersdorf
+- Hoeflein
+- Hofstetten
+- Hoheneich
+- Hohenruppersdorf
+- Hollabrunn
+- Hollenburg
+- Hollenstein an der Ybbs
+- Holzleiten
+- Horn
+- Innermanzing
+- Irenental
+- Irnfritz
+- Jagenbach
+- Judenau
+- Kaltenleutgeben
+- Karlstetten
+- Kasten bei Boeheimkirchen
+- Katzelsdorf
+- Kautzen
+- Kematen an der Ybbs
+- Kettlasbrunn
+- Kierling
+- Kirchberg am Wagram
+- Kirchberg am Walde
+- Kirchberg am Wechsel
+- Kirchberg an der Wild
+- Kirchschlag
+- Kirchstetten
+- Kledering
+- Kleinhain
+- Kleinneusiedl
+- Klosterneuburg
+- Koenigstetten
+- Kogl
+- Korneuburg
+- Kottes
+- Kottingbrunn
+- Krems
+- Kritzendorf
+- Krumau am Kamp
+- Krumbach Markt
+- Krumnussbaum
+- Laa an der Thaya
+- Laab im Walde
+- Laaben
+- Langenlebarn-Oberaigen
+- Langenlois
+- Langenrohr
+- Langenzersdorf
+- Lanzenkirchen
+- Lassee
+- Laxenburg
+- Leitzersdorf
+- Leobendorf
+- Leobersdorf
+- Leopoldsdorf
+- Leopoldsdorf im Marchfelde
+- Lerchenfeld
+- Lichtenau
+- Lichtenwoerth
+- Lindabrunn
+- Loosdorf
+- Lunz am See
+- Maiersdorf
+- Mank
+- Mannersdorf am Leithagebirge
+- Mannswoerth
+- Marbach an der Donau
+- Marchegg
+- Margarethen am Moos
+- Maria Ellend
+- Maria Enzersdorf
+- Maria Langegg
+- Maria Taferl
+- Markersdorf an der Pielach
+- Markt Piesting
+- Martinsberg
+- Matzleinsdorf
+- Mauerbach
+- Mautern
+- Melk
+- Michelbach Markt
+- Michelhausen
+- Miesenbach
+- Mistelbach
+- Mitterndorf an der Fischa
+- Moellersdorf
+- Mollands
+- Moosbierbaum
+- Moosbrunn
+- Muckendorf an der Donau
+- Muehldorf
+- Muenchendorf
+- Muthmannsdorf
+- Mödling
+- Neidling
+- Neuaigen
+- Neubau
+- Neudegg
+- Neufurth
+- Neuhaus
+- Neulengbach
+- Neumarkt an der Ybbs
+- Neunkirchen
+- Neustadtl-Markt
+- Nitzing
+- Noechling
+- Noehagen
+- Ober-Grafendorf
+- Oberkreuzstetten
+- Obernalb
+- Obersiebenbrunn
+- Oberwaltersdorf
+- Oberwoelbling
+- Obritz
+- Obritzberg
+- Oed
+- Oeynhausen
+- Ollern
+- Ollersbach
+- Opponitz
+- Ottenschlag
+- Paasdorf
+- Palterndorf
+- Paudorf
+- Peisching
+- Perchtoldsdorf
+- Pernersdorf
+- Pernitz
+- Perschling
+- Persenbeug
+- Petzenkirchen
+- Pfaffendorf
+- Pfaffstaetten
+- Pillichsdorf
+- Pleissing
+- Poechlarn
+- Pottenbrunn
+- Pottendorf
+- Pottenstein
+- Poysbrunn
+- Poysdorf
+- Pressbaum
+- Prinzersdorf
+- Puch
+- Puchberg am Schneeberg
+- Puerbach
+- Pulkau
+- Purgstall
+- Purkersdorf
+- Pyhra
+- Raabs an der Thaya
+- Rabenstein an der Pielach
+- Randegg
+- Rastenfeld
+- Rauchenwarth
+- Ravelsbach
+- Reichenau an der Rax
+- Reidling
+- Reisenberg
+- Retz
+- Riedenthal
+- Riederberg
+- Ringelsdorf
+- Roeschitz
+- Roggenreith
+- Rohr im Gebirge
+- Rosenau am Sonntagberg
+- Rotheau
+- Saeusenstein
+- Sankt Christophen
+- Sankt Georgen am Ybbsfelde
+- Sankt Leonhard am Forst
+- Sankt Pantaleon
+- Sankt Peter in der Au Markt
+- Sankt Pölten
+- Sankt Valentin
+- Sankt Veit an der Goelsen
+- Scheibbs
+- Scheiblingkirchen
+- Schiltern
+- Schoenau an der Triesting
+- Schoenkirchen-Reyersdorf
+- Schondorf
+- Schonfeld
+- Schrems
+- Schwadorf
+- Schwarzau am Steinfeld
+- Schwarzau im Gebirge
+- Schwarzenau
+- Schwarzenbach an der Pielach
+- Schwechat
+- Schweiggers
+- Seebenstein
+- Seitenstetten Markt
+- Seitzersdorf-Wolfpassing
+- Senftenberg
+- Siegersdorf
+- Sieghartskirchen
+- Sierndorf
+- Sittendorf
+- Sitzenberg
+- Sollenau
+- Sommerein
+- Sonntagberg
+- Sooss
+- Spannberg
+- Spillern
+- Spitz
+- Spratzern
+- St. Martin
+- Staatz
+- Statzendorf
+- Steinabrueckl
+- Steinakirchen am Forst
+- Stockerau
+- Stockern
+- Stranzendorf
+- Strasshof an der Nordbahn
+- Strengberg
+- Stronsdorf
+- Sulz im Weinviertel
+- Sulz im Wienerwald
+- Tattendorf
+- Ternitz
+- Texing
+- Thallern
+- Thaya
+- Theresienfeld
+- Thomasberg
+- Thunau am Kamp
+- Traisen
+- Traiskirchen
+- Traismauer
+- Trattenbach
+- Trautmannsdorf an der Leitha
+- Tresdorf
+- Tribuswinkel
+- Trumau
+- Tulbing
+- Tulln
+- Tullnerbach-Lawies
+- Ulmerfeld
+- Unter-Oberndorf
+- Unterhoeflein
+- Unterkirchbach
+- Untersiebenbrunn
+- Unterstinkenbrunn
+- Unterwaltersdorf
+- Viehdorf
+- Vitis
+- Voesendorf
+- Wagram ob der Traisen
+- Waidhofen an der Thaya
+- Waidhofen an der Ybbs
+- Waldenstein
+- Walpersbach
+- Wampersdorf
+- Wang
+- Weikendorf
+- Weikersdorf am Steinfelde
+- Weinpolz
+- Weissenbach an der Triesting
+- Weistrach
+- Weiten
+- Weitra
+- Wielings
+- Wiener Neudorf
+- Wiener Neustadt
+- Wienerbruck
+- Wieselburg
+- Wiesmath
+- Wildungsmauer
+- Wilfersdorf
+- Wilhelmsburg
+- Wimmersdorf
+- Wimpassing an der Pielach
+- Wimpassing im Schwarzatale
+- Winkl
+- Woellersdorf
+- Woerdern
+- Woesendorf
+- Wolfsbach
+- Wolfsgraben
+- Wolkersdorf im Weinviertel
+- Wuerflach
+- Wuermla
+- Wuernitz
+- Ybbs an der Donau
+- Ybbsitz
+- Ysper
+- Zeiselmauer
+- Zelking
+- Zellerndorf
+- Ziersdorf
+- Zistersdorf
+- Zwentendorf
+- Zwettl Stadt
+- Zwettl Stift
+- Zwingendorf
+- Zwoelfaxing
+:4:
+- Ach
+- Adlwang
+- Aichkirchen
+- Aigen im Muehlkreis
+- Aistersheim
+- Alberndorf in der Riedmark
+- Alkoven
+- Allerheiligen im Muehlkreis
+- Allhaming
+- Altenberg bei Linz
+- Altheim
+- Altmuenster
+- Ampflwang
+- Andorf
+- Andrichsfurth
+- Ansfelden
+- Arbing
+- Arnreit
+- Aschach an der Donau
+- Aschach an der Steyr
+- Aspach
+- Asten
+- Attersee
+- Attnang-Puchheim
+- Atzbach
+- Au an der Donau
+- Auberg
+- Auerbach
+- Auffang
+- Aurach am Hongar
+- Aurolzmuenster
+- Bachmanning
+- Bad Goisern am Hallstättersee
+- Bad Hall
+- Bad Ischl
+- Bad Kreuzen
+- Bad Leonfelden
+- Bad Schallerbach
+- Bad Zell
+- Baumgartenberg
+- Biri
+- Blindendorf
+- Braunau am Inn
+- Brunnenthal
+- Buchkirchen
+- Desselbrunn
+- Diersbach
+- Dietach
+- Dimbach
+- Doerfl
+- Ebensee
+- Eberschwang
+- Eberstalzell
+- Edt bei Lambach
+- Eferding
+- Eggelsberg
+- Eggerding
+- Eitzing
+- Engerwitzdorf
+- Enns
+- Enzenkirchen
+- Eschelberg
+- Esternberg
+- Feldkirchen an der Donau
+- Fraham
+- Frankenburg
+- Frankenmarkt
+- Franking
+- Freinberg
+- Freistadt
+- Friedburg
+- Gallneukirchen
+- Gallspach
+- Gampern
+- Gaspoltshofen
+- Geboltskirchen
+- Geinberg
+- Geretsberg
+- Gleinkerau
+- Gmunden
+- Goldwoerth
+- Gosau
+- Gosauzwang
+- Gramastetten
+- Grein
+- Grieskirchen
+- Grossraming
+- Gruenbach
+- Gruenburg
+- Gschwandt
+- Gunskirchen
+- Gurten
+- Gutau
+- Haag am Hausruck
+- Hagenberg im Muehlkreis
+- Haibach im Muehlkreis
+- Haibach ob der Donau
+- Haid
+- Hallstatt
+- Handenberg
+- Hanzing
+- Hartkirchen
+- Haselbach
+- Haslach an der Muehl
+- Hellmonsoedt
+- Herzogsdorf
+- Hinterstoder
+- Hinzenbach
+- Hochburg-Ach
+- Hoehnhart
+- Hoersching
+- Hofkirchen im Muehlkreis
+- Hofkirchen im Traunkreis
+- Hohenzell
+- Holzhausen
+- Innerschwand
+- Inzersdorf im Kremstal
+- Jeging
+- Judendorf
+- Julbach
+- Kallham
+- Kampern
+- Katsdorf
+- Kefermarkt
+- Kematen am Innbach
+- Kematen an der Krems
+- Kirchberg ob der Donau
+- Kirchdorf am Inn
+- Kirchdorf an der Krems
+- Kirchham
+- Kirchheim im Innkreis
+- Kirchschlag bei Linz
+- Klam
+- Klaus an der Pyhrnbahn
+- Kleinzell im Muehlkreis
+- Kollerschlag
+- Kopfing im Innkreis
+- Kremsmuenster
+- Krenglbach
+- Kronstorf
+- Laakirchen
+- Lambach
+- Lambrechten
+- Langenstein
+- Langstrass
+- Lasberg
+- Laussa
+- Lembach im Muehlkreis
+- Lenzing
+- Leonding
+- Lichtenberg
+- Liebenau
+- Linz
+- Lohnsburg
+- Luftenberg an der Donau
+- Marchtrenk
+- Mattighofen
+- Mauerkirchen
+- Mauthausen
+- Mehrnbach
+- Michaelnbach
+- Micheldorf in Oberoesterreich
+- Mining
+- Mistelbach bei Wels
+- Mitterkirchen im Machland
+- Moerschwang
+- Molln
+- Mondsee
+- Muenzbach
+- Munderfing
+- Mundorfing
+- Naarn im Machlande
+- Natternbach
+- Neufelden
+- Neuhofen an der Krems
+- Neuhofen im Innkreis
+- Neukirchen am Walde
+- Neukirchen an der Enknach
+- Neukirchen an der Voeckla
+- Neumarkt im Muehlkreis
+- Neustift im Muehlkreis
+- Neuzeug
+- Niederkappel
+- Niederthalheim
+- Niederwaldkirchen
+- Nussbach
+- Nussdorf am Attersee
+- Oberhofen am Irrsee
+- Oberneukirchen
+- Oepping
+- Oftering
+- Ohlsdorf
+- Ort im Innkreis
+- Ostermiething
+- Ottensheim
+- Ottnang am Hausruck
+- Pabneukirchen
+- Pachersdorf
+- Pasching
+- Peilstein im Muehlviertel
+- Perg
+- Pettenbach
+- Peuerbach
+- Pfaffstaett
+- Pfarrkirchen bei Bad Hall
+- Pfarrkirchen im Muehlkreis
+- Pichl bei Wels
+- Pierbach
+- Pinsdorf
+- Pischelsdorf am Engelbach
+- Poendorf
+- Pollham
+- Polling im Innkreis
+- Pram
+- Prambachkirchen
+- Pregarten
+- Puchenau
+- Pucking
+- Puehret
+- Pupping
+- Putzleinsdorf
+- Raab
+- Rainbach im Muehlkreis
+- Redlham
+- Regau
+- Reichenau im Muehlkreis
+- Ried im Innkreis
+- Ried in der Riedmark
+- Riedau
+- Rohr im Kremstal
+- Rohrbach in Oberoesterreich
+- Roitham
+- Rosenau am Hengstpass
+- Rossleithen
+- Rottenbach
+- Rottenegg
+- Saass
+- Sandl
+- Sankt Agatha
+- Sankt Florian
+- Sankt Florian am Inn
+- Sankt Georgen an der Gusen
+- Sankt Gotthard im Muehlkreis
+- Sankt Lorenz
+- Sankt Marien
+- Sankt Martin im Innkreis
+- Sankt Martin im Muehlkreis
+- Sankt Oswald bei Freistadt
+- Sankt Pantaleon
+- Sankt Peter am Hart
+- Sankt Peter am Wimberg
+- Sankt Ulrich bei Steyr
+- Sankt Wolfgang im Salzkammergut
+- Sarleinsbach
+- Sattledt
+- Schaerding
+- Schalchen
+- Schardenberg
+- Scharnstein
+- Scharten
+- Schenkenfelden
+- Schiedlberg
+- Schlatt
+- Schlierbach
+- Schluesslberg
+- Schoerfling
+- Schwand im Innkreis
+- Schwanenstadt
+- Schwertberg
+- Seewalchen
+- Sierning
+- Sigharting
+- Sipbachzell
+- Sonnberg im Muehlkreis
+- Spital am Pyhrn
+- Stadl-Paura
+- Steinbach an der Steyr
+- Steinerkirchen an der Traun
+- Steinhaus
+- Steyr
+- Steyregg
+- Strass im Attergau
+- Stroheim
+- Suben
+- Taiskirchen im Innkreis
+- Tarsdorf
+- Ternberg
+- Thalheim bei Wels
+- Thening
+- Tiefgraben
+- Timelkam
+- Tragwein
+- Traun
+- Traunkirchen
+- Tumeltsham
+- Ulrichsberg
+- Ungenach
+- Unterhaus
+- Unterlochen
+- Unterrohr
+- Unterweissenbach
+- Unterweitersdorf
+- Upper Austria
+- Uttendorf
+- Utzenaich
+- Voecklabruck
+- Voecklamarkt
+- Vorchdorf
+- Vorderstoder
+- Vorderweissenbach
+- Waldburg
+- Waldhausen im Strudengau
+- Walding
+- Waldkirchen am Wesen
+- Wallern an der Trattnach
+- Wankham
+- Wartberg an der Krems
+- Wartberg ob der Aist
+- Waxenberg
+- Weibern
+- Weilbach
+- Weisskirchen an der Traun
+- Weitersfelden
+- Wels
+- Wendling
+- Weng im Innkreis
+- Wernstein am Inn
+- Weyer
+- Weyregg
+- Wildenau
+- Wilhering
+- Windhaag bei Perg
+- Windischgarsten
+- Wolfern
+- Wolfsegg am Hausruck
+- Zell am Moos
+- Zipf
+- Zwettl an der Rodl
+:5:
+- Abersee
+- Abtenau
+- Adnet
+- Altenmarkt im Pongau
+- Anif
+- Annaberg im Lammertal
+- Anthering
+- Bad Duerrnberg
+- Bad Gastein
+- Bad Hofgastein
+- Bad Vigaun
+- Bergheim
+- Berndorf bei Salzburg
+- Bischofshofen
+- Bramberg am Wildkogel
+- Buermoos
+- Dorfgastein
+- Eben im Pongau
+- Ebenau
+- Elixhausen
+- Elsbethen
+- Eugendorf
+- Filzmoos
+- Flachau
+- Fusch an der Glocknerstrasse
+- Fuschl am See
+- Glanegg
+- Gois
+- Goldegg
+- Golling an der Salzach
+- Groedig
+- Grossarl
+- Grossgmain
+- Hallein
+- Hallwang
+- Henndorf am Wallersee
+- Himmelreich
+- Hinterglemm
+- Hintersee
+- Hof bei Salzburg
+- Huettau
+- Kaprun
+- Kasern
+- Kirchgoeming
+- Kleinarl
+- Koestendorf
+- Koppl
+- Krimml
+- Kuchl
+- Lamprechtshausen
+- Lend
+- Leogang
+- Lindenthal
+- Lofer
+- Lungotz
+- Maishofen
+- Mariapfarr
+- Mattsee
+- Mauterndorf
+- Michaelbeuern
+- Mittersill
+- Muehlbach am Hochkoenig
+- Muhr
+- Neukirchen am Grossvenediger
+- Neumarkt am Wallersee
+- Niedernsill
+- Nussdorf am Haunsberg
+- Oberalm
+- Oberndorf bei Salzburg
+- Obertrum am See
+- Pfarrwerfen
+- Piesendorf
+- Plainfeld
+- Puch bei Hallein
+- Radstadt
+- Ramingstein
+- Rauris
+- Ruden
+- Saalbach
+- Saalfelden am Steinernen Meer
+- Salzburg
+- Sankt Georgen bei Salzburg
+- Sankt Koloman
+- Sankt Martin bei Lofer
+- Sankt Veit im Pongau
+- Schattbach
+- Scheffau am Tennengebirge
+- Schleedorf
+- Schwarzach im Pongau
+- Seeham
+- Seekirchen am Wallersee
+- Siezenheim
+- St Johann im Pongau
+- St Michael im Lungau
+- St. Gilgen
+- St. Martin of Tennengebirge
+- Steindorf
+- Strobl
+- Sulzau
+- Tamsweg
+- Taxenbach
+- Thalgau
+- Unternberg
+- Uttendorf
+- Viehhausen
+- Wagrain
+- Wald im Pinzgau
+- Wals
+- Werfenweng
+- Zederhaus
+- Zell am See
+:6:
+- Admont
+- Aich
+- Altaussee
+- Anger
+- Ardning
+- Au bei Gaishorn am See
+- Bad Aussee
+- Bad Blumau
+- Bad Gams
+- Bad Gleichenberg
+- Bad Radkersburg
+- Baernbach
+- Birkfeld
+- Bruck an der Mur
+- Dechantskirchen
+- Deutschfeistritz
+- Deutschlandsberg
+- Dobldorf
+- Edelschrott
+- Eggersdorf bei Graz
+- Ehrenhausen
+- Eibiswald
+- Eichkoegl
+- Eisenerz
+- Etmissl
+- Fehring
+- Feldbach
+- Feldkirchen bei Graz
+- Fernitz
+- Fladnitz an der Teichalm
+- Fohnsdorf
+- Fresen
+- Fresing
+- Friesach
+- Frohnleiten
+- Fuerstenfeld
+- Gamlitz
+- Gasen
+- Geiseldorf
+- Gleinstaetten
+- Gleisdorf
+- Gnas
+- Goessendorf
+- Goesting
+- Gossendorf
+- Grafendorf bei Hartberg
+- Grambach
+- Gratkorn
+- Gratwein
+- Graz
+- Groebming
+- Gross Sankt Florian
+- Grosssteinbach
+- Grosswilfersdorf
+- Grundlsee
+- Gumpenberg
+- Gusswerk
+- Halbenrain
+- Hart bei Eggersdorf
+- Hart bei Graz
+- Hartberg
+- Hartmannsdorf
+- Hatzendorf
+- Haus im Ennstal
+- Hausmannstaetten
+- Heiligenkreuz am Waasen
+- Heimschuh
+- Hirnsdorf
+- Hirschegg
+- Hitzendorf
+- Hoenigsberg
+- Hohentauern
+- Hundsdorf
+- Ilz
+- Innere Lassnitz
+- Irdning
+- Judenburg
+- Judendorf
+- Kainach bei Voitsberg
+- Kaindorf
+- Kaindorf an der Sulm
+- Kaiser
+- Kalsdorf bei Graz
+- Kammern im Liesingtal
+- Kapfenberg
+- Kindberg
+- Kirchberg an der Raab
+- Knittelfeld
+- Koeflach
+- Krieglach
+- Kumberg
+- Lafnitz
+- Langenwang
+- Lannach
+- Lassing
+- Lassnitzhoehe
+- Lebring
+- Leibnitz
+- Leoben
+- Leutschach
+- Lieboch
+- Liezen
+- Lobming
+- Loedersdorf
+- Madstein
+- Maria Lankowitz
+- Mariahof
+- Mariazell
+- Mautern in Steiermark
+- Mellach
+- Mettersdorf am Sassbach
+- Mitterdorf an der Raab
+- Moederbrugg
+- Mooskirchen
+- Mooslandl
+- Mortantsch
+- Muerzhofen
+- Muerzzuschlag
+- Murau
+- Mureck
+- Nestelbach bei Graz
+- Niklasdorf
+- Noreia
+- OEblarn
+- Obdach
+- Oberaich
+- Passail
+- Peggau
+- Pernegg an der Mur
+- Pinggau
+- Pirka
+- Pischelsdorf in der Steiermark
+- Poels
+- Pollau
+- Preding
+- Puch bei Weiz
+- Pusterwald
+- Raaba
+- Ramsau am Dachstein
+- Ratten
+- Reichendorf
+- Rettenbach in Oststeiermark
+- Retznei
+- Riegersburg
+- Rottenmann
+- Sankt Anna am Aigen
+- Sankt Gallen
+- Sankt Georgen ob Judenburg
+- Sankt Johann in der Haide
+- Sankt Josef (Weststeiermark)
+- Sankt Lambrecht
+- Sankt Lorenzen im Muerztal
+- Sankt Marein bei Graz
+- Sankt Marein im Muerztal
+- Sankt Margarethen an der Raab
+- Sankt Michael in Obersteiermark
+- Sankt Nikolai im Sausal
+- Sankt Nikolai ob Drassling
+- Sankt Oswald bei Plankenwarth
+- Sankt Peter am Kammersberg
+- Sankt Peter am Ottersbach
+- Sankt Radegund bei Graz
+- Sankt Ruprecht an der Raab
+- Sankt Stefan ob Stainz
+- Scheifling
+- Schladming
+- Schoeder
+- Schwanberg
+- Seckau
+- Seiersberg
+- Selzthal
+- Semriach
+- Sinabelkirchen
+- Soeding
+- Spielberg bei Knittelfeld
+- Stainach
+- Stainz
+- Stallhofen
+- Stocking
+- Strass in Steiermark
+- Stubenberg
+- Studenzen
+- Tanzelsdorf
+- Teufenbach
+- Teufenbach
+- Thoerl
+- Tirol
+- Traboch
+- Trieben
+- Trofaiach
+- UEbelbach
+- Unterlamm
+- Unterpremstaetten
+- Unzmarkt
+- Vasoldsberg
+- Veitsch
+- Voitsberg
+- Vorau
+- Wagna
+- Wartberg
+- Weissenbach bei Liezen
+- Weisskirchen in Steiermark
+- Weitersfeld an der Mur
+- Weiz
+- Wenigzell
+- Werndorf
+- Wettmannstaetten
+- Wieden
+- Wies
+- Wildon
+- Woerschach
+- Wolfsberg im Schwarzautal
+- Wundschuh
+- Zeltweg
+:7:
+- Abfaltersbach
+- Absam
+- Achenkirch
+- Achensee
+- Ainet
+- Aldrans
+- Angerberg
+- Assling
+- Axams
+- Bad Haering
+- Berwang
+- Brandenberg
+- Breitenbach am Inn
+- Brixen im Thale
+- Brixlegg
+- Brunner
+- Buch in Tirol
+- Doelsach
+- Ebbs
+- Ehenbichl
+- Ehrwald
+- Elbigenalp
+- Ellboegen
+- Ellmau
+- Endach
+- Erl
+- Erpfendorf
+- Fieberbrunn
+- Flaurling
+- Flirsch
+- Fritzens
+- Fuegen
+- Fulpmes
+- Gallzein
+- Galtuer
+- Gerlos
+- Gnadenwald
+- Goetzens
+- Going
+- Gries am Brenner
+- Grins
+- Haiming
+- Hall in Tirol
+- Hart im Zillertal
+- Hoefen
+- Holzgau
+- Hopfgarten im Brixental
+- Igls
+- Imst
+- Innsbruck
+- Inzing
+- Ischgl
+- Iselsberg
+- Jenbach
+- Jochberg
+- Jungholz
+- Kals am Grossglockner
+- Kaltenbach
+- Kematen in Tirol
+- Kirchberg in Tirol
+- Kirchbichl
+- Kitzbühel
+- Koessen
+- Kolsass
+- Kramsach
+- Kufstein
+- Kundl
+- Laengenfeld
+- Landeck
+- Langkampfen
+- Lans
+- Leithen
+- Lermoos
+- Leutasch
+- Lienz
+- Matrei am Brenner
+- Matrei in Osttirol
+- Maurach
+- Mayrhofen
+- Mieming
+- Mils bei Solbad Hall
+- Moetz
+- Muenster
+- Natters
+- Nauders
+- Navis
+- Neustift
+- Niederau
+- Niederndorf
+- Niederndorferberg
+- Oberau
+- Obergurgl
+- Oberhofen im Inntal
+- Oberndorf in Tirol
+- Oberperfuss
+- Patsch
+- Pertisau
+- Pettnau
+- Polling in Tirol
+- Radfeld
+- Ramsau im Zillertal
+- Reith bei Kitzbuehel
+- Reith im Alpbachtal
+- Reutte
+- Ried im Oberinntal
+- Rietz
+- Rinn
+- Rohrberg
+- Roppen
+- Rum
+- Saint Anton
+- Sankt Jakob in Defereggen
+- Sankt Johann in Tirol
+- Sautens
+- Scheffau am Wilden Kaiser
+- Schlitters
+- Schoenwies
+- Schwaz
+- Schwendau
+- Schwendt
+- Schwoich
+- Seefeld in Tirol
+- Sillian
+- Silz
+- Sistrans
+- Soell
+- Solden
+- St. Ulrich am Pillersee
+- Stans
+- Strass im Zillertal
+- Strassen
+- Stumm
+- Tannheim
+- Tarrenz
+- Telfs
+- Terfens
+- Thaur
+- Thiersee
+- Thurn
+- Trins
+- Tristach
+- Tulfes
+- Unterahrnbach
+- Voels
+- Volders
+- Vomp
+- Vomperbach
+- Waengle
+- Waidring
+- Walchsee
+- Wattens
+- Wenns
+- Westendorf
+- Wildschoenau
+- Wörgl
+- Zell am Ziller
+- Zellberg
+- Zirl
+:8:
+- Alberschwende
+- Altach
+- Andelsbuch
+- Bartholomaeberg
+- Bizau
+- Bludenz
+- Bludesch
+- Brand
+- Bregenz
+- Buers
+- Dalaas
+- Damuels
+- Doren
+- Dornbirn
+- Egg
+- Feldkirch
+- Frastanz
+- Fussach
+- Gaschurn
+- Goefis
+- Goetzis
+- Hard
+- Hirschegg
+- Hittisau
+- Hoechst
+- Hoerbranz
+- Hohenems
+- Innerbraz
+- Klaus
+- Koblach
+- Krumbach
+- Lauterach
+- Lech
+- Lochau
+- Ludesch
+- Lustenau
+- Maeder
+- Marul
+- Mellau
+- Mittelberg
+- Nenzing
+- Nueziders
+- Rankweil
+- Riefensberg
+- Riezlern
+- Sankt Gallenkirch
+- Satteins
+- Schlins
+- Schruns
+- Schwarzach
+- Silbertal
+- Stallehr
+- Sulz
+- Sulzberg
+- Thueringen
+- Thueringerberg
+- Tschagguns
+- UEbersaxen
+- Vandans
+- Vorarlberg
+- Vorderreuthe
+- Weiler
+- Wolfurt
+:9:
+- Vienna

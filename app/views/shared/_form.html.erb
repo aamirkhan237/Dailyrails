@@ -5,45 +5,53 @@
         <h5 class="mb-0">Billing details</h5>
       </div>
       <div class="card-body">
-        <%= form_for address, url: addresses_path(product_id: @product&.id), method: :post do |f| %> 
-          <!-- Form fields for the new address -->
-          <div class="row mb-4">
-            <div class="col">
-              <div class="form-outline">
-                <%= f.text_field :name, class: "form-control", id: "form7Example1" %>
-                <%= f.label :Line1, class: "form-label", for: "form7Example1" %>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-outline">
-                <%= f.text_field :street, class: "form-control", id: "form7Example2" %>
-                <%= f.label :street, class: "form-label", for: "form7Example2" %>
-              </div>
-            </div>
-          </div>
-
-          <!-- Text input for City -->
-          <div class="form-outline mb-4">
-            <%= f.text_field :city, class: "form-control", id: "form7Example3" %>
-            <%= f.label :city, class: "form-label", for: "form7Example3" %>
-          </div>
-
-          <!-- Text input for State -->
-          <div class="form-outline mb-4">
-            <%= f.text_field :state, class: "form-control", id: "form7Example4" %>
-            <%= f.label :state, class: "form-label", for: "form7Example4" %>
-          </div>
-
-          <!-- Text input for Zip -->
-          <div class="form-outline mb-4">
-            <%= f.text_field :zip, class: "form-control", id: "form7Example5" %>
-            <%= f.label :zip, class: "form-label", for: "form7Example5" %>
-          </div>
-
-          <!-- Submit button -->
-          <%= f.submit "Add Address", class: "btn btn-primary" %>
+        <%= form_for address, url: addresses_path(product_id: @product&.id), method: :post do |f| %>
+         <% if @address.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @address.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
         <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <%= f.label :name, "Name", class: "form-label" %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <%= f.label :street, "Street", class: "form-label" %>
+        <%= f.text_field :street, class: "form-control" %>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="form-outline mb-4">
+    <%= f.label :zip, "ZIP", class: "form-label" %>
+    <%= f.text_field :zip, class: "form-control" %>
+  </div>
+
+  <div class="form-outline mb-4">
+    <%= f.label :city, "City", class: "form-label" %>
+    <%= f.select :city, [], { prompt: "Select a city" }, class: "form-control", id: "address_city",disabled: true  %>
+  </div>
+
+  <div class="form-outline mb-4">
+    <%= f.label :state, "State", class: "form-label" %>
+    <%= f.select :state, [], { prompt: "Select a state" }, class: "form-control", id: "address_state", disabled: true %>
+  </div>
+
+  <div class="form-outline mb-4">
+    <%= f.label :country, "Country", class: "form-label" %>
+    <%= f.select :country, CS.countries.invert, { prompt: "Select a country" }, class: "form-control", id: "address_country" %>
+  </div>
+<%= f.hidden_field :country_full, id: "address_country_full" %>
+  <%= f.hidden_field :state_full, id: "address_state_full" %>
+  <%= f.submit "Add Address", class: "btn btn-primary" %>
+<% end %>
+<%= javascript_include_tag 'addresses' %>

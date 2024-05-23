@@ -4,13 +4,15 @@ Rails.application.routes.draw do
     resources :cart_items, only: [:create, :update, :destroy]
   end
 
-
-  # get '/display/', to: 'products#show_custom', as: 'display_product'
-
   resources :orders, only: [:new, :create, :show] do
     get 'confirmation', on: :member
   end
-  resources :addresses, only: [:new, :create]
+  resources :addresses, only: [:new, :create] do
+    collection do
+      get :states
+      get :cities
+    end
+  end
   
 # get 'order_confirmation/:id', to: 'orders#order_confirmation', as: 'order_confirmation'
   
