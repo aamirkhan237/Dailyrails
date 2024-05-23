@@ -16,7 +16,7 @@ class OrdersController < ApplicationController
       end
   
       @addresses = current_user.addresses
-      @address = Address.new 
+      @address = Address.new
     end
   
     def create
@@ -54,7 +54,7 @@ class OrdersController < ApplicationController
     def order_params
       params.require(:order).permit(:address_id,:total_price, order_items_attributes: [:product_id, :quantity])
     end
-    # def address_params
-    #     params.require(:order).permit(:name, :street, :city, :state, :zip)
-    #   end
+    def address_params
+        params.require(:order).permit(:name, :street, :city, :state, :zip)
+      end
   end

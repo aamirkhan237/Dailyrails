@@ -1,0 +1,635 @@
+---
+:D:
+- "'Arugot"
+- "'Azriqam"
+- "'En Zurim"
+- "'Ezer"
+- "'Omer"
+- Alumim
+- Alumma
+- Arad
+- Ashdod
+- Ashquelon
+- Avshalom
+- Bat Hadar
+- Be'eri
+- Beersheba
+- Beror Hayil
+- Bet Nir
+- Bet Qama
+- Bet Shiqma
+- Bitha
+- Bizzaron
+- Bnei Dkalim
+- Bnei Netsarim
+- Dimona
+- Dorot
+- Dvira
+- Eilat
+- Ein Gedi
+- Elifaz
+- Erez
+- Eshel HaNasi
+- Even Shemu’el
+- Gal'on
+- Gevim
+- Giv'ati
+- Gvulot
+- Hatsav
+- Hatseva
+- Hura
+- Karmei Katiff
+- Karmiyya
+- Kefar Warburg
+- KfarAhim
+- KfarHaRif
+- KfarMaymon
+- KfarMenahem
+- Kfar`Azza
+- Kiryat Gat
+- Kokhav Michael Sobell
+- Lahav
+- Lakhish
+- Laqiyya
+- Lehavim
+- Lotan
+- Mabbu'im
+- Magen
+- Mash'en
+- Massu'otYitshaq
+- Mefallesim
+- Meitar
+- Merhav Am
+- Merkaz Shapira
+- Metar
+- Mitzpe Ramon
+- Mivtahim
+- Nahala
+- Negba
+- Nehora
+- Netiv Ha'Asara
+- Netivot
+- Neve Mivtah
+- Nir Gallim
+- Nir Hen
+- Nir'am
+- Nirim
+- Nizzan
+- Nogah
+- Ofakim
+- Ohad
+- Or HaNer
+- Pattish
+- Peduyim
+- Qelahim
+- Qiryat Mal'akhi
+- Rahat
+- Rannen
+- Revadim
+- Revivim
+- Ruhama
+- Sa'ad
+- Sansana
+- Sde Boker
+- Sde Yo'av
+- Sde Zevi
+- SdeAvraham
+- Sderot
+- Segev Shalom
+- Shafir
+- Shahar
+- Shlomit
+- Shoval
+- Tel Sheva'
+- Telalim
+- Tequma
+- Timmorim
+- Tushia
+- Umm Batin
+- Urim
+- Yad Mordekhay
+- Yad Natan
+- Yated
+- Yeruham
+- Yinnon
+- Yotvata
+- Zavdi'el
+- Zerahyah
+- Ziqim
+- "`Amasa"
+- "`En HaBesor"
+:HA:
+- "'Ar'ara"
+- "'Isfiya"
+- Athlit
+- Avi’el
+- Baqa el Gharbiya
+- Barqay
+- Basma
+- Bat Shlomo
+- Bet Oren
+- Binyamina
+- Binyamina-Giv'at Ada
+- Caesarea
+- Dor
+- El Fureidis
+- Gan Hashomron
+- Gan Shemu’el
+- Geva' Karmel
+- Giv`at `Ada
+- Giv`atNili
+- HaBonim
+- HaHoterim
+- Hadera
+- Haifa
+- Harish
+- Ibtin
+- Jatt
+- Kafr Qari'
+- Karkur
+- Kefar Bialik
+- KfarPines
+- Kiryat Tiv'on
+- Lahavot Haviva
+- Ma'agan Mikha'el
+- Ma'anit
+- Maggal
+- Megadim
+- Meisir
+- Mishmarot
+- Mitzpe Ilan
+- Nahsholim
+- Nesher
+- Nofit
+- Or Akiva
+- Pardes Hanna Karkur
+- Qatsir
+- Qiryat Ata
+- Qiryat Bialik
+- Qiryat Hayyim
+- Qiryat Motsqin
+- Qiryat Yam
+- Ramat Yohanan
+- Regavim
+- Rekhasim
+- Sde Yizhaq
+- Sdot Yam
+- Sha'ar Ha'Amaqim
+- Talme El'azar
+- Tirat Carmel
+- Tsrufa
+- Umm el Fahm
+- Usha
+- Yagur
+- Zikhron Ya‘aqov
+- "`En Shemer"
+:JM:
+- "'Agur"
+- "'Ein Naquba"
+- Abu Ghosh
+- Bekoa
+- Bet Me'ir
+- Bet Neqofa
+- Bet Shemesh
+- Bet Zayit
+- Elazar
+- Eshta'ol
+- Even Sappir
+- Gefen
+- Giv'at Yesha'yahu
+- Har Adar
+- Har'el
+- Jerusalem
+- KfarUriyya
+- Kokhav HaShahar
+- Li On
+- Luzit
+- Mevaseret Zion
+- Mizpe Yeriho
+- Modiin Ilit
+- Naham
+- Nahshon
+- Nataf
+- Neve Ilan
+- Qiryat Ye'arim
+- Shoresh
+- Tal Shahar
+- Tekoa
+- Tselafon
+- TsurHadassa
+- YadHaShmona
+- maale adumim
+:M:
+- "'Adanim"
+- "'Aseret"
+- "'En HaHoresh"
+- "'Enat"
+- "'Olesh"
+- Ahi'ezer
+- Ahituv
+- Alon
+- Avihayil
+- Bahan
+- Bareqet
+- Bat Hefer
+- Bat Hen
+- Be'er Ya'aqov
+- Beit Herut
+- Ben Shemen
+- Benaya
+- Bet 'Arif
+- Bet 'Uzi'el
+- Bet Dagan
+- Bet Gamli'el
+- Bet Yehoshua'
+- BetYitshaqSha'arHefer
+- BneDror
+- BneRe'em
+- Bne`Atarot
+- Bnei Ayish
+- Bnei Zion
+- Burgata
+- Ein Sarid
+- Ein Vered
+- El'ad
+- Elishama'
+- Elyakhin
+- Elyashiv
+- Et Taiyiba
+- Even Yehuda
+- Eyal
+- Ga'ash
+- Gan HaDarom
+- Gan Yavne
+- Gan Yoshiyya
+- GanShlomo
+- Ganei Tikva
+- GanneYohanan
+- Gannot Hadar
+- Gat Rimmon
+- Ge'alya
+- Ge'ullim
+- Gedera
+- Gezer
+- Gimzo
+- Giv'at Brenner
+- Ha'Ogen
+- HaMa'pil
+- Hadar 'Am
+- Hadid
+- Hanni'el
+- Harutsim
+- Hemed
+- Herev Le'et
+- Herut
+- Hod HaSharon
+- Hofit
+- Hogla
+- Horeshim
+- Huldah
+- Jaljulya
+- Kadima
+- Kadima Zoran
+- Kafr Bara
+- Kafr Qasim
+- Karme Yosef
+- Kefar Sirkin
+- Kefar Vitqin
+- Kfar Hess
+- Kfar Saba
+- Kfar Yona
+- KfarBilu
+- KfarBinNun
+- KfarHaNagid
+- KfarHabad
+- KfarMonash
+- KfarShmu'el
+- Kokhav Ya'ir
+- Lapid
+- Lod
+- Ma`as
+- Ma`barot
+- Magshimim
+- Matan
+- Matsliah
+- Mazkeret Batya
+- Mazor
+- Mikhmoret
+- Mishmar HaSharon
+- MishmarDavid
+- Mishmeret
+- Modi‘in Makkabbim Re‘ut
+- Nahshonim
+- Na‘an
+- Nefat Petah Tiqwa
+- Nehalim
+- Ness Ziona
+- Neta`im
+- Netanya
+- NetserSereni
+- NevveYamin
+- NevveYaraq
+- NirTsevi
+- Nizzane 'Oz
+- Nof Ayalon
+- Nofekh
+- Nordiyya
+- Omets
+- Palmahim
+- Pardesiyya
+- Pedaya
+- Petah Tikva
+- Petahya
+- Porat
+- Qalansawe
+- Qidron
+- Qiryat 'Eqron
+- QvutsatYavne
+- Raanana
+- Ramat HaKovesh
+- Ramla
+- Ramot HaShavim
+- Rehovot
+- Rinnatya
+- Rishon LeTsiyyon
+- Rishpon
+- Rosh Ha‘Ayin
+- Savyon
+- Sde Warburg
+- Sdei Hemed
+- Shefayim
+- Shoham
+- Tel Mond
+- TelYitshaq
+- Tenuvot
+- Tirah
+- Tirat Yehuda
+- Tsofit
+- Tsoran
+- TsurMoshe
+- Tzafria
+- Tzur Yitzhak
+- Yad Binyamin
+- Yad Rambam
+- Yagel
+- Yanuv
+- Yaqum
+- Yarhiv
+- Yarqona
+- Yedidya
+- Yehud
+- Yesodot
+- Zemer
+- Zur Yig'al
+- "`Azarya"
+:TA:
+- Azor
+- Bat Yam
+- Bnei Brak
+- Gannot
+- Gelil Yam
+- Giv‘at Shmuel
+- Giv‘atayim
+- Herzliya
+- Holon
+- KfarAzar
+- KfarShmaryahu
+- Kiryat Ono
+- Mishmar HaShiv`a
+- Or Yehuda
+- Qiryat Ono
+- Ramat Gan
+- Ramat HaSharon
+- Revivim
+- Tel Aviv
+:Z:
+- "'Adi"
+- "'Eilabun"
+- "'En Dor"
+- "'En HaMifraz"
+- "'En HaShofet"
+- "'Evron"
+- "'Uzeir"
+- Abu Sinan
+- Acre
+- Afeq
+- Afiqim
+- Afula
+- Ahuzzat Baraq
+- Allon HaGalil
+- Allonim
+- Almagor
+- Alonei Abba
+- Alummot
+- Ami'ad
+- Amirim
+- Aniam
+- Arbel
+- Avtalyon
+- Ayyelet HaShahar
+- Beit Jann
+- Bet Alfa
+- Bet HaShitta
+- Bet Ha`Emeq
+- Bet Hillel
+- Bet Lehem HaGelilit
+- Bet She`arim
+- Bet She’an
+- Bet Zera'
+- Bi'na
+- Bu'ayna-Nujaydat
+- Buqei'a
+- Dabburiya
+- Dafna
+- Daliyya
+- Dalton
+- Dan
+- Deir Hanna
+- Deir el Asad
+- Dovrat
+- El Makr
+- Elon
+- Elyaqim
+- Er Reina
+- Eshhar
+- Fassuta
+- Gadot
+- Gan Ner
+- Gesher
+- GesherHaZiv
+- Geva'
+- Gilon
+- Ginnosar
+- Giv'at 'Oz
+- Giv'at Avni
+- Givat Ela
+- HaGosherim
+- HaSolelim
+- HaYogev
+- HaZore'im
+- HaZorea'
+- Had Nes
+- Hamam
+- Hanita
+- Hararit
+- Harduf
+- Haspin
+- HatsorHaGelilit
+- Hilla
+- Hukok
+- Hulata
+- Hurfeish
+- I'billin
+- Iksal
+- Ilaniyya
+- Jish
+- Judeida Makr
+- Julis
+- Ka'abiyya
+- Kabri
+- Kabul
+- Kafr Kamma
+- Kafr Kanna
+- Kafr Manda
+- Kafr Misr
+- Kahal
+- Kammon
+- Karkom
+- Karmi’el
+- Kaukab Abu el Hija
+- Kefar Masaryk
+- Kelil
+- Kerem Maharal
+- Kfar Blum
+- Kfar Gil'adi
+- Kfar HaNasi
+- Kfar Haruv
+- Kfar Vradim
+- Kfar Yasif
+- KfarHittim
+- KfarRoshHaNiqra
+- KfarRuppin
+- KfarTavor
+- KfarYehezqel
+- Kinneret
+- Kisra
+- Kisra - Sume'a
+- Lahavot HaBashan
+- Lavi
+- Lavon
+- Livnim
+- Lotem
+- Ma'alot-Tarshiha
+- Maale Iron
+- Maghar
+- Mahanayim
+- Majd el Kurum
+- Majdal Shams
+- Malkiyya
+- Manof
+- Marom Golan
+- Mash Had
+- Massad
+- Massada
+- Mazzuva
+- Menahemya
+- Menora
+- Mesillot
+- Metulla
+- Mi`ilya
+- Midrakh 'Oz
+- Migdal
+- Migdal Ha‘Emeq
+- Mishmar Ha'Emeq
+- Mishmar HaYarden
+- MitspeAviv
+- MitspeNetofa
+- Mizra
+- Moreshet
+- Na'ura
+- Nahalal
+- Nahariya
+- Nahf
+- Nazareth
+- Nazerat 'Illit
+- Neot Mordechai
+- Netiv HaShayyara
+- NevveEtan
+- NevveZiv
+- Nir Yafe
+- NirDavid
+- Nov
+- Ortal
+- Oshrat
+- Parod
+- Qidmat Zevi
+- Qiryat Shmona
+- Qoranit
+- Ram On
+- Rama
+- Ramat HaShofet
+- Ramat Magshimim
+- Ramat Tsevi
+- Ramat Yishai
+- RamatDavid
+- Ramot
+- Ramot Menashe
+- Raqqefet
+- Regba
+- Reshafim
+- Rihaniya
+- Rosh Pinna
+- Sa'ar
+- Safed
+- Sajur
+- Sakhnin
+- Sallama
+- Sandala
+- Sarid
+- Sde Eli'ezer
+- Sde Eliyyahu
+- Sde Nahum
+- Sde Nehemya
+- Sde Terumot
+- Segev
+- Sha'av
+- ShadmotDvora
+- Shamir
+- Sharona
+- Shavei Tzion
+- Shefa-'Amr
+- Shekhanya
+- Shelomi
+- Shibli
+- Shimshit
+- Shluhot
+- Shomrat
+- Snir
+- Taiyiba
+- Tal El
+- Tel 'Adashim
+- Tel Yosef
+- Tiberias
+- Timrat
+- Tsurit
+- Tuba Zangariya
+- Tur`an
+- Tuval
+- Ya'ad
+- Yafa
+- Yanuah Jat
+- Yanuh
+- Yardena
+- Yas'ur
+- Yavne’el
+- Yesud HaMa'ala
+- Yif'at
+- Yir'on
+- Yirka
+- Yodefat
+- Yoqne'am 'Illit
+- Yoqneam
+- Yuvallim
+- Zarzir
+- "`Alma"
+- "`Amir"
