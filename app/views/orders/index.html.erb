@@ -1,1 +1,38 @@
-<h1>Hello Im index page for oder</h1>
+<h1>Order History</h1>
+
+<% if @orders.any? %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Date</th>
+        <th>Total Price</th>
+        <th>Address</th>
+        <th>Items</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @orders.each do |order| %>
+        <tr>
+          <td><%= order.id %></td>
+          <td><%= order.created_at.strftime("%d-%m-%Y") %></td>
+          <td><%= order.formatted_total_price %></td>
+          <td>
+            <%= order.address.name %>,<br>
+            <%= order.address.street %>,<br>
+            <%= order.address.city %>, <%= order.address.state %> <%= order.address.zip %>
+          </td>
+          <td>
+            <ul>
+              <% order.order_items.each do |item| %>
+                <li><%= item.product.name %> - Quantity: <%= item.quantity %>, Price: <%= item.price %></li>
+              <% end %>
+            </ul>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p>You have no orders.</p>
+<% end %>

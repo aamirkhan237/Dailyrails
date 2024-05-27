@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :cart_items, only: [:create, :update, :destroy]
   end
 
-  resources :orders, only: [:new, :create, :show] do
+  resources :orders, only: [:new, :create, :show, :index] do
     get 'confirmation', on: :member
   end
   resources :addresses, only: [:new, :create] do
