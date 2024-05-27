@@ -7,11 +7,11 @@ class OrdersController < ApplicationController
       @product = Product.find(params[:product_id]) if params[:product_id].present?
   
       if @product.present?
-        @order.order_items.build(product: @product, quantity: 1)
+        @order.order_items.build(product: @product, quantity: 1, price: @product.price)
       else
         @cart = current_user.cart
         @cart.cart_items.each do |cart_item|
-          @order.order_items.build(product: cart_item.product, quantity: cart_item.quantity)
+          @order.order_items.build(product: cart_item.product, quantity: cart_item.quantity, price: cart_item.product.price)
         end
       end
   
@@ -25,11 +25,11 @@ class OrdersController < ApplicationController
 
         if params[:product_id].present?
             product = Product.find(params[:product_id])
-            @order.order_items.build(product: product, quantity: 1)
+            @order.order_items.build(product: product, quantity: 1,price: product.price)
           else
             @cart = current_user.cart
             @cart.cart_items.each do |cart_item| 
-              @order.order_items.build(product: cart_item.product, quantity: cart_item.quantity)
+              @order.order_items.build(product: cart_item.product, quantity: cart_item.quantity, price: cart_item.product.price)
             end
           end
         @order.total_price = @order.order_items.sum { |item| item.product.price * item.quantity }
@@ -48,11 +48,17 @@ class OrdersController < ApplicationController
     def confirmation
         @order = Order.find(params[:id])
       end
-      
-    private
+    
+
+      def index
+        @orders = current_user.orders.includes(:order_items, :address).order(created_at: :desc)
+      end
+
+
+private
   
     def order_params
-      params.require(:order).permit(:address_id,:total_price, order_items_attributes: [:product_id, :quantity])
+      params.require(:order).permit(:address_id,:total_price, order_items_attributes: [:product_id, :quantity, :price])
     end
     def address_params
         params.require(:order).permit(:name, :street, :city, :state, :zip)

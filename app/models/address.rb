@@ -1,5 +1,4 @@
 class Address < ApplicationRecord
-  
   belongs_to :user
   has_many :orders
   validates :name, :street, :city, :state,  presence: true
@@ -7,6 +6,6 @@ class Address < ApplicationRecord
 
   
   def full_address
-    "#{name} ,#{street}, #{city}, #{state}, #{zip}, #{country}"
+    "#{name} ,#{street}, #{city},#{zip}, #{state_full},  #{country_full}"
   end
 end
